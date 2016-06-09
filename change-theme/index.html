@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>hao123</title>
+		<link rel="stylesheet" href="./css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+
+	<body>
+		<!--header-->
+		<header class="header container">
+			<!--百度搜索-->
+			<div class="head-search ">
+				<div class="baidu-logo">
+					<a href="http://www.baidu.com">
+						<img src="img/bd_logo.png" height="40" />
+					</a>
+				</div>
+				<div class="baidu-serach">
+					<form action="#" method="get">
+						<input class="iput-text" type="text" />
+						<input class="iput-submit" type="submit" value="百度一下" />
+					</form>
+				</div>
+			</div>
+			<!--更换网页皮肤-->
+			<div class="head-skin">
+				<span class="skin-text">切换皮肤：</span>
+				<ul class="list-inline skin-list" id="skin">
+					<li class="skin skin1" onclick="orangeSkin()"></li>
+					<li class="skin skin2" onclick="watchetSkin()"></li>
+					<li class="skin skin3" onclick="pinkSkin()"></li>
+				</ul>
+			</div>
+
+		</header>
+		<!--nav-->
+		<nav class="nav container ">
+			<ul class="list-inline " id="nav-list">
+				<li role="presentation" id="first" class="menu"><a class="nav-link active" href="#">首页</a></li>
+				<li role="presentation" class="menu"><a class="nav-link" href="#">电视剧</a></li>
+				<li role="presentation" class="menu"><a class="nav-link" href="#">最新电影</a></li>
+				<li role="presentation" class="menu"><a class="nav-link" href="#">新闻头条</a></li>
+				<li role="presentation" class="menu"><a class="nav-link" href="#">八卦娱乐</a></li>
+				<li role="presentation" class="menu"><a class="nav-link" href="#">军事热点</a></li>
+				<li role="presentation" class="menu"><a class="nav-link" href="#">热门游戏</a></li>
+				<li role="presentation" class="menu"><a class="nav-link" href="#">小游戏</a></li>
+				<li role="presentation" class="menu"><a class="nav-link" href="#">今日特价</a></li>
+				<li role="presentation" class="menu"><a class="nav-link" href="#">特价旅游</a></li>
+				<li role="presentation" class="menu"><a class="nav-link" href="#">生活服务</a></li>
+			</ul>
+		</nav>
+		<!--中间内容-->
+		<article class="arcticle container">
+			<!--左侧-->
+			<aside class="content-slider">
+				<div class="item-pic">
+					<a href="http://tengguo.37.com/s/1/1080/36534.html?uid=434004" target="_blank" title="超霸传奇震撼公测">
+						<img src="./img/78ea.jpg" width="292" height="70">
+					</a>
+				</div>
+				<div class="servicetab-bd">
+					<div class="starbar">
+						<ul class="list-inline">
+							<li class="startbar-list">
+								<div class="baritem">
+									<div class="category">
+										<i class="star-icon i-tv"></i>
+										<div class="strar-text">
+											<a href="http://v.hao123.com/dianshi/" title="电视剧" class="baritem-link ">电视剧</a>
+											<span class="split">|</span>
+											<a href="http://v.hao123.com/zongyi/" title="综艺" class=" baritem-link">综艺</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="startbar-list">
+								<div class="baritem">
+									<div class="category">
+										<i class="star-icon i-game"></i>
+										<div class="strar-text">
+											<a href="http://v.hao123.com/dianshi/" title="电视剧" class="baritem-link ">游戏</a>
+											<span class="split">|</span>
+											<a href="http://v.hao123.com/zongyi/" title="综艺" class=" baritem-link">小游戏</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="startbar-list">
+								<div class="baritem">
+									<div class="category">
+										<i class="star-icon i-movie"></i>
+										<div class="strar-text">
+											<a href="http://v.hao123.com/dianshi/" title="电视剧" class="baritem-link ">电影</a>
+											<span class="split">|</span>
+											<a href="http://v.hao123.com/zongyi/" title="综艺" class=" baritem-link">直播</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="startbar-list">
+								<div class="baritem">
+									<div class="category">
+										<i class="star-icon i-comic"></i>
+										<div class="strar-text">
+											<a href="http://v.hao123.com/dianshi/" title="电视剧" class="baritem-link ">动画</a>
+											<span class="split">|</span>
+											<a href="http://v.hao123.com/zongyi/" title="综艺" class=" baritem-link">漫画</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="startbar-list">
+								<div class="baritem">
+									<div class="category">
+										<i class="star-icon i-war"></i>
+										<div class="strar-text">
+											<a href="http://v.hao123.com/dianshi/" title="电视剧" class="baritem-link ">头条</a>
+											<span class="split">|</span>
+											<a href="http://v.hao123.com/zongyi/" title="综艺" class=" baritem-link">军事</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="startbar-list">
+								<div class="baritem">
+									<div class="category">
+										<i class="star-icon i-music"></i>
+										<div class="strar-text">
+											<a href="http://v.hao123.com/dianshi/" title="电视剧" class="baritem-link ">旅游</a>
+											<span class="split">|</span>
+											<a href="http://v.hao123.com/zongyi/" title="综艺" class=" baritem-link">音乐</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="startbar-list">
+								<div class="baritem">
+									<div class="category">
+										<i class="star-icon i-stock"></i>
+										<div class="strar-text">
+											<a href="http://v.hao123.com/dianshi/" title="电视剧" class="baritem-link ">彩票</a>
+											<span class="split">|</span>
+											<a href="http://v.hao123.com/zongyi/" title="综艺" class=" baritem-link">股票</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="startbar-list">
+								<div class="baritem">
+									<div class="category">
+										<i class="star-icon i-novel"></i>
+										<div class="strar-text">
+											<a href="http://v.hao123.com/dianshi/" title="电视剧" class="baritem-link ">搞笑</a>
+											<span class="split">|</span>
+											<a href="http://v.hao123.com/zongyi/" title="综艺" class=" baritem-link">小说</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="startbar-list">
+								<div class="baritem">
+									<div class="category">
+										<i class="star-icon i-mobile"></i>
+										<div class="strar-text">
+											<a href="http://v.hao123.com/dianshi/" title="电视剧" class="baritem-link ">特价</a>
+											<span class="split">|</span>
+											<a href="http://v.hao123.com/zongyi/" title="综艺" class=" baritem-link">手机</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="startbar-list">
+								<div class="baritem">
+									<div class="category">
+										<i class="star-icon i-edu"></i>
+										<div class="strar-text">
+											<a href="http://v.hao123.com/dianshi/" title="电视剧" class="baritem-link ">教育</a>
+											<span class="split">|</span>
+											<a href="http://v.hao123.com/zongyi/" title="综艺" class=" baritem-link">理财</a>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="box-startools">
+						<i class="startools-icon i-life"></i>
+						<a href="#" class="startools-arrow" data-hook="startools-arrow" alog-text="展开"></a>
+						<div class="startools-list">
+							<a class="startools-link" href="https://www.hao123.com/">天气</a>
+							<a class="startools-link" href="https://www.hao123.com/">星座</a>
+							<a class="startools-link" href="https://www.hao123.com/">网盘</a>
+							<a class="startools-link" href="https://www.hao123.com/">快递</a>
+							<a class="startools-link" href="https://www.hao123.com/">违章</a>
+						</div>
+					</div>
+				</div>
+				<div class="g_box toplist">
+					<div class="toptab-list">
+						<div class="toptab">
+							<a class="channel channel-frist">
+								<span class="s-br20 g_green">头条</span>
+							</a>
+							<i class="g-br6 spt"></i>
+							<a class="channel ">
+								<span>社会</span>
+							</a>
+							<i class="g-br6 spt"></i>
+							<a class="channel ">
+								<span>娱乐</span>
+							</a>
+							<i class="g-br6 spt"></i>
+							<a class="channel ">
+								<span>军事</span>
+							</a>
+							<i class="g-br6 spt"></i>
+							<a class="channel ">
+								<span>体育</span>
+							</a>
+							<a class="drop-down" href="#"></a>
+						</div>
+					</div>
+					<div class="topzixun-over">
+						<div class="toptext">
+							<p class="text">
+								<i class="rank"></i>
+								<a href="#" class="text-link">反腐剧解禁尺度多大:反派首现副国级 </a>
+							</p>
+							<p class="text">
+								<i class="rank"></i>
+								<a href="#" class="text-link">马云回应垄断:地主死了农民不一定富  </a>
+							</p>
+							<p class="text">
+								<i class="rank"></i>
+								<a href="#" class="text-link">女子21年前抱错婴儿 得知后拒认亲生  </a>
+							</p>
+							<p class="text">
+								<i class="rank"></i>
+								<a href="#" class="text-link">夫妻假离婚后 妻子发现丈夫变态嗜好 </a>
+							</p>
+							<p class="text">
+								<i class="rank"></i>
+								<a href="#" class="text-link">男子拒绝特殊服务 结果被打进了医院 </a>
+							</p>
+							<p class="text">
+								<i class="rank"></i>
+								<a href="#" class="text-link">女子注射隆胸 10年后胸跑到后背大腿 </a>
+							</p>
+							<a class="topzixun-more" href="#">更多新闻>></a>
+						</div>
+					</div>
+				</div>
+			</aside>
+			<!--中间-->
+			<section class="section">
+				<div class="hao123-famoussite">
+					<div class="widget-site">
+						<div class="site-manage" title="添加网址"></div>
+						<ul class="site-bd">
+							<li class="site-item">
+								<a class="js_text bd_text" href="#">百度</a> &nbsp;•&nbsp;
+								<a class="tb_text" href="#">贴吧</a>
+							</li>
+							<li class="site-item">
+								<a class="js_text xl_text" href="#">新浪</a> &nbsp;•&nbsp;
+								<a class="tb_text" href="#">微博</a>
+							</li>
+							<li class="site-item">
+								<a class="js_text sf_text" href="#">搜狐</a> &nbsp;•&nbsp;
+								<a class="tb_text" href="#">视频</a>
+							</li>
+							<li class="site-item">
+								<a class="js_text tx_text" href="#">腾　讯</a>
+							</li>
+							<li class="site-item">
+								<a class="js_text wy_text" href="#">网　易</a>
+							</li>
+							<li class="site-item">
+								<a class="js_text yk_text" href="#">优 酷 网</a>
+							</li>
+							<li class="site-item">
+								<a class="js_text tm_text" href="#">天　猫</a>
+							</li>
+							<li class="site-item">
+								<a class="js_text fh_text" href="#">凤 凰 网</a>
+							</li>
+							<li class="site-item">
+								<a class="js_text tbw_text" href="#">淘 宝 网</a>
+							</li>
+							<li class="site-item">
+								<a class="js_text mfyx_text" href="#">免费游戏</a>
+							</li>
+							<li class="site-item">
+								<a class="js_text yx_text" href="#">4399游戏</a>
+							</li>
+							<li class="site-item">
+								<a class="js_text xh_text" href="#">新华</a> &nbsp;•&nbsp;
+								<a class="tb_text" href="#">人民</a>
+							</li>
+							<li class="site-item">
+								<a class="js_text jd_text" href="#">京东商城</a>
+							</li>
+							<li class="site-item">
+								<a class="js_text jhs_text" href="#">聚 划 算</a>
+							</li>
+							<li class="site-item">
+								<a class="js_text tj_text" href="#">今日特价</a>
+							</li>
+							<li class="site-item">
+								<a class="js_text yx_text" href="#">hao123影视</a>
+							</li>
+							<li class="site-item">
+								<a class="js_text qc_text" href="#">汽车之家</a>
+							</li>
+							<li class="site-item">
+								<a class="js_text cp_text" href="#">彩票开奖</a>
+							</li>
+						</ul>
+					</div>
+					<div class="box-famoussite">
+						<div class="wf-line"></div>
+						<div class="wf-inner">
+							<span>
+								<a href="#">东方财富</a>•
+								<a href="#">理财</a>
+							</span>
+							<span>
+								<a href="#">58 同 城</a>
+							</span>
+							<span>
+								<a href="#">搜 房 网</a>
+							</span>
+							<span>
+								<a href="#">携程旅行网</a>
+							</span>
+							<span>
+								<a href="#">百度地图</a>
+							</span>
+							<span>
+								<a href="#">12306</a>•
+								<a href="#">旅游</a>
+							</span>
+							<span>
+								<a href="#">聚美优品</a>
+							</span>
+							<span>
+								<a href="#">赶 集 网</a>
+							</span>
+							<span>
+								<a href="#">易 车 网</a>
+							</span>
+							<span>
+								<a href="#">去哪儿网</a>
+							</span>
+							<span>
+								<a href="#">工商银行</a>
+							</span>
+							<span>
+								<a href="#">天涯社区</a>
+							</span>
+							<span>
+								<a href="#">唯 品 会</a>
+							</span>
+							<span>
+								<a href="#">同程旅游网</a>
+							</span>
+							<span>
+								<a href="#">途牛旅游网</a>
+							</span>
+							<span>
+								<a href="#">中国移动</a>
+							</span>
+							<span>
+								<a href="#">太平洋汽车</a>
+							</span>
+							<span>
+								<a href="#">斗 鱼 TV</a>
+							</span>
+							<span>
+								<a href="#">hao 到 家</a>
+							</span>
+							<span>
+								<a href="#">直 播 吧</a>
+							</span>
+							<span>
+								<a href="#">中华英才网</a>
+							</span>
+							<span>
+								<a href="#">在线学习</a>
+							</span>
+							<span>
+								<a href="#">萌主页</a>•
+								<a href="#">动漫</a>
+							</span>
+							<span>
+								<a href="#">哔哩哔哩</a>
+							</span>
+							<span>
+								<a class="g_green" href="#">苏宁易购</a>
+							</span>
+							<span>
+								<a class="g_green" href="#">国美在线</a>
+							</span>
+							<span>
+								<a class="g_green" href="#">购物大全</a>
+							</span>
+							<span>
+								<a class="g_green" href="#">1 号 店</a>
+							</span>
+							<span>
+								<a class="g_green" href="#">爱 淘 宝</a>
+							</span>
+							<span>
+								<a class="g_green" href="#">海淘</a>•
+								<a class="g_green" href="#">手机</a>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="layout-adbar">
+					<div class="widget-hlbar">
+						<span>
+							<a class="hlbar-link" href="#">聚划算</a>
+						</span>
+						<span>
+							<a class="hlbar-link" href="#">爱淘宝</a>
+						</span>
+						<span>
+							<a class="hlbar-link" href="#">特价机票</a>
+						</span>
+						<span>
+							<a class="hlbar-link" href="#">理财赚钱</a>
+						</span>
+						<span>
+							<a class="hlbar-link" href="#">贷款</a>
+						</span>
+						<span>
+							<a class="hlbar-link" href="#">景点门票</a>
+						</span>
+						<span>
+							<a class="hlbar-link" href="#">手机狂欢购</a>
+						</span>
+						<span>
+							<a class="hlbar-link" href="#">低价促销</a>
+						</span>
+						<span>
+							<a class="hlbar-link" href="#">精选优惠</a>
+						</span>
+						<span>
+							<a class="hlbar-link" href="#">特价酒店</a>
+						</span>
+						<span>
+							<a class="hlbar-link" href="#">火车票预订</a>
+						</span>
+					</div>
+				</div>
+				<div class="layout-guess">
+					<span class="youlike"></span>
+					<a class="changeAll" href="#" hidefocus="true"></a>
+					<div class="next-main">
+						<div class="guesslike-industry">
+							<i class="red-icon"></i>
+							<a href="http://life.hao123.com/" class="guesslike-industry-title g_green">生活 </a>
+							<div class="guesslike-row">
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">智联招聘网</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">钢琴速学</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">PS全攻略</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">巧记英语词</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">儿童学英语</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">二手房过户</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">购房贷款</a>
+							    </span>
+							</div>
+						</div>
+						<div class="guesslike-industry">
+							<a href="http://life.hao123.com/" class="guesslike-industry-title g_green">商城 </a>
+							<div class="guesslike-row">
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">9.9包邮</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">20元封顶</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">潮流女装</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">酷炫男装</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">居家1折起</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">鞋包配饰</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">童装1折</a>
+							    </span>
+							</div>
+						</div>
+						<div class="guesslike-industry">
+							<a href="http://life.hao123.com/" class="guesslike-industry-title g_green">军事 </a>
+							<div class="guesslike-row">
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">中国军力</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">中国核潜艇</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">风云中南海</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">军事热点</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">中国新航母</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">2016大战争</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">军情谍报网</a>
+							    </span>
+							</div>
+						</div>
+						<div class="guesslike-industry">
+							<a href="http://life.hao123.com/" class="guesslike-industry-title g_green">游戏 </a>
+							<div class="guesslike-row">
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">一刀9999级</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link " href="#">武神赵子龙</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">变态MU</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">新公测传奇</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">蓝月传奇</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">4D魔幻</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">刀刀爆元宝</a>
+							    </span>
+							</div>
+						</div>
+						<div class="guesslike-industry">
+							<a href="http://life.hao123.com/" class="guesslike-industry-title g_green">热门 </a>
+							<div class="guesslike-row">
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">创业好项目</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">靠谱理财</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">零钱理财</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">养生温泉</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link " href="#">镀金求职</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">特惠新房</a>
+							    </span>
+								<span class="guesslike-col">
+									<a class="guesslike-link" href="#">佣金0.5%</a>
+							    </span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</article>
+		<!--footer-->
+		<footer class="footer container">
+			<div class="hao123-footer">
+				<div class="g-fl">
+					<span class="first-item g-fl"></span>
+					<a class="item" href="http://www.hao123.com/abouthao123.htm">关于本站</a>
+					<a class="item" href="http://www.hao123.com/abouthao123.htm">常见问题</a>
+					<a class="item" href="http://www.hao123.com/abouthao123.htm">全站地图</a>
+					<a class="item" href="http://www.hao123.com/abouthao123.htm">意见反馈</a>
+					<span class="item">京ICP证030173号</span>
+					<a class="item  bottom-fawu icon-fawu1" href="#"></a>
+					<a class="item  bottom-fawu icon-fawu2" href="#"></a>
+					<a class="item  bottom-fawu icon-fawu3" href="#"></a>
+				</div>
+				<div class="mobile-box">
+					<a class="foot-app browse item" href="#">下载 浏览器</a>
+					<a class="foot-app mobile item" href="#">下载 手机端</a>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="./js/Hao123.js"></script>
+		<!--[if IE]>
+		<script type="text/javascript" src="./js/html5.js"></script>
+	    <![endif]-->
+		<script type="text/javascript" src="./js/html5.js"></script>
+	</body>
+
+</html>

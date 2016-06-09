@@ -11,4 +11,5 @@
 - [baidu-responsive](https://github.com/geekyzs/webdemo/tree/master/baidu-responsive "baidu-responsive")（响应式的百度首页）
 - [simple-calculator](https://github.com/geekyzs/webdemo/tree/master/simple-calculator "simple-calculator")（JS简易计算器）
 - [web-calculator](https://github.com/geekyzs/webdemo/tree/master/web-calculator "web-calculator")（完整计算器）
+- [change-theme](https://github.com/geekyzs/webdemo/tree/master/change-theme "change-theme")（改变网站主题-hao123首页）
 
