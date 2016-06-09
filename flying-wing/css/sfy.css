@@ -1,0 +1,119 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-width: 810px;
+	height: 100%;
+	min-height: 600px;
+	background-color: #FFFFFF;
+}
+
+
+/*网站头部*/
+.head {
+	height: 450px;
+	text-align: center;
+}
+
+/*网站头部导航栏*/
+.nav {
+	margin-left: 2%;
+	width: 96%;
+	height: 30px;
+	background-color: #3A5FCD;
+	line-height: 30px;
+	+margin-left: 0;
+}
+
+.nav>a {
+	color: white;
+	padding-left: 60px;
+	text-decoration: none;
+}
+
+
+/*网页中间内容区*/
+.acticle {
+	background-color: #FFFFFF;
+	margin-top: 30px;
+	overflow: hidden;
+}
+
+.main {
+	width: 100%;
+	float: left;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+
+}
+
+.intro {
+	margin: 0 240px 0 240px;
+	color: #666666;
+	line-height: 25px;
+	font-size: 12px;
+	text-indent: 2em;
+}
+
+
+/*网页左边区域*/
+.left {
+	width: 200px;
+	background-color: #FFFFFF;
+	float: left;
+	margin-left:-98%;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+
+}
+
+.product>li {
+	list-style: none;
+}
+
+.product>li>a {
+	text-decoration: none;
+	font-size: 12px;
+	color: #000;
+	line-height: 28px;
+}
+
+.product>li>img {
+	vertical-align: middle;
+	padding-right: 8px;
+}
+
+
+/*网页右边区域*/
+.right {
+	width: 230px;
+	background-color: #FFFFFF;
+	float: left;
+	margin-left: -230px;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+
+}
+
+.right>p {
+	color: #666666;
+	line-height: 25px;
+	font-size: 12px;
+}
+
+
+/*网页底部区域*/
+.foot {
+	height: 100px;
+	background-color: #3A5FCD;
+	text-align: center;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.cop {
+	padding-top: 20px;
+	color: #FFFFFF;
+	font-size: 12px;
+	line-height: 25px;
+}
