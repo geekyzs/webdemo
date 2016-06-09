@@ -1,0 +1,182 @@
+body {
+	line-height: 1;
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 62.5%;
+	font: inherit;
+	font-family: arial;
+	vertical-align: baseline;
+}
+
+
+/*头部logo*/
+
+.ui-new-toolbar {
+	background-image: url(../img/bg-news-logo.png);
+	background-repeat: no-repeat;
+	background-position: center 6px;
+	background-size: 77px auto;
+	-webkit-background-size: 77px auto;
+	position: relative;
+	min-width: 320px;
+	height: 44px;
+	z-index: 2;
+	background-color: #3e98f0;
+	text-align: center;
+	font-weight: 400;
+	color: #fff;
+}
+
+.admin {
+	color: #fff;
+	display: inline-block;
+	float: right;
+	margin-right: 10px;
+	line-height: 44px;
+}
+
+
+/*导航栏*/
+
+.index_view_navigator {
+	position: relative;
+	background-color: #3e98f0;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	overflow: hidden;
+	z-index: 2;
+	color: #fff;
+}
+
+.divider {
+	height: 1px;
+	margin: 0 10px;
+	background-color: #5dabf0;
+}
+
+.nav-list {
+	margin: 0;
+	padding: 0;
+	padding-top: 3px;
+	padding-bottom: 5px;
+}
+
+.nav-list li {
+	height: 33px;
+	font-size: 1.6rem;
+	line-height: 32px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.nav-list li span {
+	cursor: pointer;
+	margin: 0 8px;
+	padding-bottom: 3px;
+	color: #fff;
+	white-space: nowrap;
+}
+
+.tabin {
+	border-bottom: 1px solid #fff;
+}
+
+
+/*新闻内容*/
+
+.index_view_sections {
+	position: relative;
+	z-index: 1;
+	top: -2px;
+	min-height: 800px;
+}
+
+.index-view-subpage {
+	position: relative;
+	margin-top: -1px;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+}
+
+#list {
+	width: 100%;
+	background-color: #FFF;
+}
+
+#list ul li {
+	position: relative;
+	border-bottom: 1px solid #f6f6f6;
+	overflow: hidden;
+	padding: 10px 0;
+	margin: 0 10px;
+}
+
+#list ul li a {
+	text-decoration: none;
+}
+
+#list ul li a img {
+	margin-right: 10px;
+	float: left;
+	display: inline-block;
+	width: 95px;
+	height: 68px;
+}
+
+#list ul li a p {
+	font-size: 1.6rem;
+	line-height: 20px;
+	color: #262b31;
+	margin: -1px 0 4px 0;
+}
+
+#list ul li b {
+	display: inline-block;
+	margin-top: 10px;
+	font-size: 1.2rem;
+	line-height: 20px;
+	color: #b8bac0;
+	font-weight: 400;
+	text-align: left;
+}
+
+
+/*底部*/
+
+.footer {
+	margin-top: 30px;
+}
+
+.ftconw {
+	text-align: center;
+}
+
+.ftcp,
+.ftgwab,
+.cpa:link,
+.cpa:visited {
+	color: #999999;
+	margin: 0;
+}
+
+.cpa {
+	text-decoration: underline;
+}
+
+
+/*回到顶部*/
+
+.gotop-globalview {
+	width: 38px;
+	height: 40px;
+	color: #fff;
+	cursor: pointer;
+	opacity: .9;
+	z-index: 10;
+	right: 10px;
+	bottom: 190px;
+	position: fixed;
+	background: #7f7f7f url(../img/gotop.png) no-repeat center center;
+	background-size: 38px 40px;
+}

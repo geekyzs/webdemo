@@ -15,4 +15,5 @@
 - [jkxy-seajs](https://github.com/geekyzs/webdemo/tree/master/jkxy-seajs "jkxy-seajs")（seajs模块化-极客学院首页）
 - [image-pubuliu](https://github.com/geekyzs/webdemo/tree/master/image-pubuliu "image-pubuliu")（瀑布流布局-百度图片）
 - [news-php](https://github.com/geekyzs/webdemo/tree/master/news-php "news-php")（PHP后台-手机百度新闻）
+- [news-nodejs](https://github.com/geekyzs/webdemo/tree/master/news-nodejs "news-nodejs")（nodejs后台-手机百度新闻）
 
