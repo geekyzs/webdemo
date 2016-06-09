@@ -12,5 +12,5 @@
 - [simple-calculator](https://github.com/geekyzs/webdemo/tree/master/simple-calculator "simple-calculator")（JS简易计算器）
 - [web-calculator](https://github.com/geekyzs/webdemo/tree/master/web-calculator "web-calculator")（完整计算器）
 - [change-theme](https://github.com/geekyzs/webdemo/tree/master/change-theme "change-theme")（改变网站主题-hao123首页）
-- [jkxy-seajs](https://github.com/geekyzs/webdemo/tree/master/jkxy-seajs "jkxy-seajs")（seajs 模块化-极客学院首页）
+- [jkxy-seajs](https://github.com/geekyzs/webdemo/tree/master/jkxy-seajs "jkxy-seajs")（seajs模块化-极客学院首页）
 
