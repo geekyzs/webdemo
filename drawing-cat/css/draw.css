@@ -1,0 +1,439 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	margin: 100px 0 0 600px;
+}
+
+.cat {
+	position: relative;
+}
+
+/*猫头*/
+.head {
+	position: relative;
+	width: 180px;
+	height: 160px;
+	background: #FFE4E1;
+	border: 2px solid #CDC0B0;
+	border-radius: 98% 98% 68% 68% / 128% 128% 88% 88%;
+	box-shadow: -8px 8px 18px #D6D6D6;
+}
+
+.eyes {
+	position: relative;
+}
+
+/*眼睛*/
+.eyes .eye {
+	width: 28px;
+	height: 24px;
+	background: #CD3278;
+	border: 2px solid #CDC0B0;
+	border-radius: 58%;
+	position: absolute;
+	top: 58px;
+}
+
+/*左眼*/
+.eyes .left {
+	left: 38px;
+}
+
+/*右眼*/
+.eyes .right {
+	left: 118px;
+}
+
+/*左眼珠*/
+.bleft {
+	width: 12px;
+	height: 10px;
+	background: #2B2B2B;
+	border-radius: 58px;
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	box-shadow: 4px -2px 5px #fff;
+	-webkit-animation: eyemove 4s ease-in infinite;
+	-moz-animation: eyemove 4s ease-in infinite;
+	-ms-animation: eyemove 4s ease-in infinite;
+	animation: eyemove 4s ease-in infinite;
+}
+
+/*右眼珠*/
+.bright {
+	width: 12px;
+	height: 10px;
+	background: #2B2B2B;
+	border-radius: 58px;
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	box-shadow: 4px -2px 5px #fff;
+	-webkit-animation: eyemove 4s ease-in infinite;
+	-moz-animation: eyemove 4s ease-in infinite;
+	-ms-animation: eyemove 4s ease-in infinite;
+	animation: eyemove 4s ease-in infinite;
+}
+
+/*嘴*/
+.mouth {
+	width: 20px;
+	height: 40px;
+	border-bottom: 1px solid #8B8970;
+	border-radius: 8px;
+	position: absolute;
+	top: 98px;
+	z-index: 2;
+}
+
+.mouth.left {
+	left: 90px;
+}
+
+.mouth.right {
+	left: 70px
+}
+
+/*耳朵*/
+.ear {
+	width: 0px;
+	height: 0px;
+	border-width: 28px;
+	border-style: solid;
+	border-color: #FFBBFF #FFC0CB transparent transparent;
+	position: absolute;
+}
+
+/*左耳*/
+.ear.left {
+	background-color: transparent;
+	transform: rotate(-92deg);
+	-webkit-transform: rotate(-92deg);
+	-moz-transform: rotate(-92deg);
+	-ms-transform: rotate(-92deg);
+	border-radius: 38%;
+	left: 2px;
+}
+
+/*右耳*/
+.ear.right {
+	background-color: transparent;
+	transform: rotate(358eg);
+	-webkit-transform: rotate(358deg);
+	-moz-transform: rotate(358deg);
+	-ms-transform: rotate(358deg);
+	border-radius: 38%;
+	left: 120px;
+}
+
+/*胡子*/
+.whiskers .whisker {
+	width: 38px;
+	height: 1px;
+	background: #696969;
+	position: absolute;
+	z-index: 2;
+}
+
+/*右上胡子*/
+.whiskers .rTop {
+	left: 124px;
+	top: 118px;
+	-webkit-transform: rotate(158deg);
+	-moz-transform: rotate(158deg);
+	-ms-transform: rotate(158deg);
+	transform: rotate(158deg);
+}
+
+/*右中胡子*/
+.whiskers .rMiddle {
+	left: 124px;
+	top: 130px;
+}
+
+/*右下胡子*/
+.whiskers .rBottom {
+	left: 124px;
+	top: 142px;
+	-webkit-transform: rotate(208deg);
+	-moz-transform: rotate(208deg);
+	-ms-transform: rotate(208deg);
+	transform: rotate(208deg);
+}
+
+/*左上胡子*/
+.whiskers .lTop {
+	left: 20px;
+	top: 118px;
+	-webkit-transform: rotate(208deg);
+	-moz-transform: rotate(208deg);
+	-ms-transform: rotate(208deg);
+	transform: rotate(208deg);
+}
+
+/*左中胡子*/
+.whiskers .lMiddle {
+	left: 20px;
+	top: 130px;
+}
+
+/*左下胡子*/
+.lBottom {
+	left: 20px;
+	top: 142px;
+	-webkit-transform: rotate(158deg);
+	-moz-transform: rotate(158deg);
+	-ms-transform: rotate(158deg);
+	transform: rotate(158deg);
+}
+
+/*身体*/
+.bodys {
+	position: relative;
+	top: -310px;
+}
+
+/*肚子*/
+.tummy {
+	width: 180px;
+	height: 240px;
+	background: #FFE4E1;
+	border: 2px solid #CDC0B0;
+	border-top-color: transparent;
+	position: absolute;
+	top: 268px;
+	left: 4px;
+	border-radius: 118% 118% 88% 88% / 118% 118% 88% 88%;
+	box-shadow: -8px 8px 18px #D6D6D6;
+}
+
+/*爱心*/
+.heart {
+	position: relative;
+	top: 88px;
+	left: 38px;
+	-webkit-animation: heartbounce 4s ease-in infinite;
+	-moz-animation: heartbounce 4s ease-in infinite;
+	-ms-animation: heartbounce 4s ease-in infinite;
+	animation: heartbounce 4s ease-in infinite;
+	font-size: 8px;
+}
+
+.heart:before,
+.heart:after {
+	position: absolute;
+	content: "";
+	left: 50px;
+	top: 0;
+	width: 50px;
+	height: 80px;
+	background: #EE1289;
+	-moz-border-radius: 50px 50px 0 0;
+	border-radius: 50px 50px 0 0;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: 0 100%;
+	-moz-transform-origin: 0 100%;
+	-ms-transform-origin: 0 100%;
+	transform-origin: 0 100%;
+}
+
+.heart:after {
+	left: 0;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	-ms-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+}
+
+/*眼珠移动*/
+@-webkit-keyframes eyemove {
+	20% {
+		margin: 0 0 0 0;
+	}
+	35% {
+		margin: 3px 0 0 0;
+	}
+	55% {
+		margin: 3px 0 0 5px;
+	}
+	70% {
+		margin: 3px 10px 0 0;
+	}
+	88% {
+		margin: 3px 0 0 0;
+	}
+	96% {
+		margin: 0 0 0 0;
+	}
+}
+
+@-moz-keyframes eyemove {
+	20% {
+		margin: 0 0 0 0;
+	}
+	35% {
+		margin: 3px 0 0 0;
+	}
+	55% {
+		margin: 3px 0 0 5px;
+	}
+	70% {
+		margin: 3px 10px 0 0;
+	}
+	88% {
+		margin: 3px 0 0 0;
+	}
+	96% {
+		margin: 0 0 0 0;
+	}
+}
+
+@keyframes eyemove {
+	20% {
+		margin: 0 0 0 0;
+	}
+	35% {
+		margin: 3px 0 0 0;
+	}
+	55% {
+		margin: 3px 0 0 5px;
+	}
+	70% {
+		margin: 3px 10px 0 0;
+	}
+	88% {
+		margin: 3px 0 0 0;
+	}
+	96% {
+		margin: 0 0 0 0;
+	}
+}
+
+/*爱心跳动*/
+@-webkit-keyframes heartbounce {
+	20% {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
+	35% {
+		-webkit-transform: scale(.9);
+		-moz-transform: scale(.9);
+		-ms-transform: scale(.9);
+		transform: scale(.9);
+	}
+	55% {
+		-webkit-transform: scale(.8);
+		-moz-transform: scale(.8);
+		-ms-transform: scale(.8);
+		transform: scale(.8);
+	}
+	70% {
+		-webkit-transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+	88% {
+		-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+	96% {
+		-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+}
+
+@-moz-keyframes heartbounce {
+	20% {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
+	35% {
+		-webkit-transform: scale(.9);
+		-moz-transform: scale(.9);
+		-ms-transform: scale(.9);
+		transform: scale(.9);
+	}
+	55% {
+		-webkit-transform: scale(.8);
+		-moz-transform: scale(.8);
+		-ms-transform: scale(.8);
+		transform: scale(.8);
+	}
+	70% {
+		-webkit-transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+	88% {
+		-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+	96% {
+		-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+}
+
+@keyframes heartbounce {
+		20% {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
+	35% {
+		-webkit-transform: scale(.9);
+		-moz-transform: scale(.9);
+		-ms-transform: scale(.9);
+		transform: scale(.9);
+	}
+	55% {
+		-webkit-transform: scale(.8);
+		-moz-transform: scale(.8);
+		-ms-transform: scale(.8);
+		transform: scale(.8);
+	}
+	70% {
+		-webkit-transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+	88% {
+		-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+	96% {
+		-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+}
