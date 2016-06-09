@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>百度一下，你就知道</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="./css/style.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!--网页头部-->
+		<header>
+			<!--导航栏-->
+			<nav class="navbar navbar-default nav-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                           <span class="sr-only"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                        </button>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="http://www.nuomi.com/?cid=002540" name="nuomi" class="nav1 nav2">糯米</a></li>
+							<li><a href="http://news.baidu.com" name="news" class="nav1 nav2">新闻</a></li>
+							<li><a href="http://www.hao123.com" name="hao123" class="nav1 nav2">hao123</a></li>
+							<li><a href="http://map.baidu.com" name="map" class="nav1 nav2">地图</a></li>
+							<li><a href="http://v.baidu.com" name="video" class="nav1 nav2">视频</a></li>
+							<li><a href="http://tieba.baidu.com" name="tieba" class="nav1 nav2">贴吧</a></li>
+							<li><a href="https://passport.baidu.com/v2/?login&amp;tpl=mn&amp;u=http%3A%2F%2Fwww.baidu.com%2F" name="login" class="nav1">登录</a></li>
+							<li><a href="http://www.baidu.com/gaoji/preferences.html" name="setting" class="nav1">设置</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!--中间区域-->
+		<article class="container">
+			<!--搜索区-->
+			<section class="container-inside">
+				<div class="logo">
+					<img src="./img/bd_logo.png" alt="百度log" title="百度" class="logoimg" />
+				</div>
+				<div class="baidu-form">
+					<form action="#" method="get">
+						<input class="input-text" name="bd" value maxlength="255" type="text">
+						<button name="sub" class="input-submit" type="submit">百度一下</button>
+					</form>
+				</div>
+			</section>
+			<!--新闻区-->
+			<section class="container-news container">
+				<div class="common-url">
+					<div class="title-text title-url">
+						<a href="http://top.baidu.com/?fr=mhd_card">常用网址</a>
+					</div>
+					<ul class="list-unstyled news-hot-list common-url-list">
+						<li><a class="title-content list-common" href="http://www.baidu.com" target="_blank">资讯</a></li>
+						<li><a class="title-content list-common" href="http://www.baidu.com" target="_blank">hao123</a></li>
+						<li><a class="title-content list-common" href="http://www.baidu.com" target="_blank">图片</a></li>
+						<li><a class="title-content list-common" href="http://www.baidu.com" target="_blank">爱奇艺</a></li>
+						<li><a class="title-content list-common" href="http://www.baidu.com" target="_blank">美女</a></li>
+						<li><a class="title-content list-common" href="http://www.baidu.com" target="_blank">音乐</a></li>
+						<li><a class="title-content list-common" href="http://www.baidu.com" target="_blank">笑话</a></li>
+						<li><a class="title-content list-common" href="http://www.baidu.com" target="_blank">购物</a></li>
+					</ul>
+				</div>
+				<div class="news-recommend">
+					<div class="title-text recommend-text">
+						<a href="http://top.baidu.com/?fr=mhd_card">百度推荐</a>
+					</div>
+					<a class="hot-refresh refresh-title" href="#">
+						<span class="hot-refresh-icon"></span>
+						<span class="hot-refresh-text">换一换</span>
+					</a>
+					<div class="recommend-list recommend-one">
+						<h4><a href="http://edu.gmw.cn/2016-04/15/content_19714474.htm"  target="_blank" > 成都一小学教学楼被爬山虎覆盖 如绿色城堡</a></h4>
+						<div class="from">
+							<a href="http://edu.gmw.cn" target="_blank">光明教育</a>
+							<span>04-15 08:56</span>
+						</div>
+					</div>
+					<div class="recommend-list">
+						<h4><a href="http://edu.gmw.cn/2016-04/15/content_19714474.htm"  target="_blank" >伊朗最新魔改战车满身尽带黄金甲 性能接近59D</a></h4>
+						<div class="s-pic-content">
+							<a href="http://tech.ifeng.com/a/20160415/41594934_0.shtml">
+								<img src="./img/news-1.jpg" height="106px" />
+								<img src="./img/news-2.jpg" height="106px" />
+								<img src="./img/news-3.jpg" height="106px" />
+							</a>
+						</div>
+						<div class="from">
+							<a href="http://edu.gmw.cn" target="_blank">腾讯新闻</a>
+							<span>04-15 09:24</span>
+						</div>
+					</div>
+				</div>
+				<div class="news-hot">
+					<div class="title-text">
+						<a href="http://top.baidu.com/?fr=mhd_card">实时热点</a>
+					</div>
+					<a class="hot-refresh" href="#">
+						<span class="hot-refresh-icon"></span>
+						<span class="hot-refresh-text">换一换</span>
+					</a>
+					<div class="news-hot-container">
+						<ul class="list-unstyled news-hot-list ">
+							<li><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E8%B4%BE%E9%9D%99%E9%9B%AF%E7%A6%BB%E5%A9%9A%E5%8D%8F%E8%AE%AE&amp;rsv_idx=2" target="_blank">叶良辰撕帝吧吧主</a></li>
+							<li><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E6%9D%A8%E6%B4%8B%E5%AE%8B%E8%8C%9C%E7%96%91%E5%90%8C%E5%B1%85&amp;rsv_idx=2" target="_blank">杭州暴雨蓝色预警</a></li>
+							<li><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E5%AD%99%E7%BA%A2%E9%9B%B7%E7%BB%BC%E8%89%BA%E6%96%B0%E4%BA%BA%E5%A5%96&amp;rsv_idx=2" target="_blank">孙红雷综艺新人奖</a></li>
+							<li><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E6%9C%9D%E5%AF%BC%E5%BC%B9%E5%8F%91%E5%B0%84%E5%A4%B1%E8%B4%A5&amp;rsv_idx=2" target="_blank">郭富城盼再拿影帝</a></li>
+							<li><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E7%94%B7%E5%AD%A9%E9%92%A2%E7%AE%A1%E5%AF%B9%E6%8A%97%E5%9F%8E%E7%AE%A1&amp;rsv_idx=2" target="_blank">男孩钢管对抗城管</a></li>
+							<li><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E4%B8%A5%E6%9F%A5%E5%AD%A6%E6%9C%AF%E4%B8%8D%E7%AB%AF%E8%A1%8C%E4%B8%BA&amp;rsv_idx=2" target="_blank">严查学术不端行为</a></li>
+							<li><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E5%B1%B1%E4%B8%9C%E6%B0%91%E8%AD%A6%E8%A2%AB%E7%BE%A4%E6%AE%B4&amp;rsv_idx=2" target="_blank">姐妹遗弃新生男婴</a></li>
+							<li><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E5%88%98%E6%B6%9B%E9%9C%B8%E6%B0%94%E5%A3%81%E5%92%9A%E6%9D%A8%E7%B4%AB&amp;rsv_idx=2" target="_blank">刘涛霸气壁咚杨紫</a></li>
+							<li><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E8%B4%BE%E9%9D%99%E9%9B%AF%E7%A6%BB%E5%A9%9A%E5%8D%8F%E8%AE%AE&amp;rsv_idx=2" target="_blank">一夜暴富百亿千金</a></li>
+							<li><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E6%9D%A8%E6%B4%8B%E5%AE%8B%E8%8C%9C%E7%96%91%E5%90%8C%E5%B1%85&amp;rsv_idx=2" target="_blank">女生联名举报老师</a></li>
+							<li><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E5%AD%99%E7%BA%A2%E9%9B%B7%E7%BB%BC%E8%89%BA%E6%96%B0%E4%BA%BA%E5%A5%96&amp;rsv_idx=2" target="_blank">赵丽颖恋情疑坐实</a></li>
+							<li><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E6%9C%9D%E5%AF%BC%E5%BC%B9%E5%8F%91%E5%B0%84%E5%A4%B1%E8%B4%A5&amp;rsv_idx=2" target="_blank">女生下跪求婚女生</a></li>
+							<li><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E7%94%B7%E5%AD%A9%E9%92%A2%E7%AE%A1%E5%AF%B9%E6%8A%97%E5%9F%8E%E7%AE%A1&amp;rsv_idx=2" target="_blank">气质车模完胜明星</a></li>
+							<li><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E4%B8%A5%E6%9F%A5%E5%AD%A6%E6%9C%AF%E4%B8%8D%E7%AB%AF%E8%A1%8C%E4%B8%BA&amp;rsv_idx=2" target="_blank">成都查获活体蚂蚁</a></li>
+							<li><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E5%B1%B1%E4%B8%9C%E6%B0%91%E8%AD%A6%E8%A2%AB%E7%BE%A4%E6%AE%B4&amp;rsv_idx=2" target="_blank">见女友素颜被吓傻</a></li>
+							<li><a class="title-content" href="https://www.baidu.com/s?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%E5%88%98%E6%B6%9B%E9%9C%B8%E6%B0%94%E5%A3%81%E5%92%9A%E6%9D%A8%E7%B4%AB&amp;rsv_idx=2" target="_blank">男子卖女性何首乌</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</article>
+		<!--footer-->
+		<footer class="footer">
+			<div class="container">
+				<div class="ftconw">
+					<span class="ftcp">
+							©2016&nbsp;Baidu&nbsp;<a class="cpa" href="http://www.baidu.com/duty/">使用百度前必读</a>&nbsp;
+							<a href="http://jianyi.baidu.com/" class="cpa">意见反馈</a>&nbsp;京ICP证030173号&nbsp;
+							<i><img class="ftimg" src="./img/cp1.png"/></i>
+						</span>
+					<p class="ftgwab">
+						<i><img class="ftimg" src="./img/wgab.png"/></i>京公网安备11000002000001号
+					</p>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="./js/jquery-2.2.1.min.js"></script>
+		<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+		<!--[if IE]>
+		<script type="text/javascript" src="./js/html5.js"></script>
+		<![endif]-->
+	</body>
+
+</html>
