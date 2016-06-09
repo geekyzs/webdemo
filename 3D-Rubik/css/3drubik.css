@@ -1,0 +1,153 @@
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.container {
+	position: absolute;
+	height: 180px;
+	width: 180px;
+	left: 50%;
+	right: 50%;
+	margin: 200px 0 auto;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-webkit-perspective: 400px;
+}
+/*魔方3D效果，动画旋转*/
+.box {
+	opacity: 0.9;
+	width: 180px;
+	height: 180px;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-transform-style: preserve-3d;
+	-webkit-animation: rotate 6s infinite ease-in-out;
+}
+
+/*第一面*/
+.one {
+	width: 180px;
+	height: 180px;
+	position: absolute;
+	-webkit-transform: translateZ(90px);
+}
+
+/*第二面*/
+.two {
+	width: 180px;
+	height: 180px;
+	position: absolute;
+	-webkit-transform: rotateY(90deg) translateZ(90px);
+}
+
+/*第三面*/
+.three {
+	width: 180px;
+	height: 180px;
+	position: absolute;
+	-webkit-transform: rotateY(180deg) translateZ(90px);
+}
+/*第四面*/
+.four {
+	width: 180px;
+	height: 180px;
+	position: absolute;
+	-webkit-transform: rotateY(-90deg) translateZ(90px);
+}
+
+/*第五面*/
+.five {
+	width: 180px;
+	height: 180px;
+	position: absolute;
+	-webkit-transform: rotateX(90deg) translateZ(90px);
+	;
+}
+
+/*第六面*/
+.six {
+	width: 180px;
+	height: 180px;
+	position: absolute;
+	-webkit-transform: rotateX(-90deg) translateZ(90px);
+}
+
+/*红色小方块*/
+.red {
+	background-color: #FF0000;
+	width: 56px;
+	height: 56px;
+	border: 2px solid;
+	float: left;
+}
+
+/*蓝色小方块*/
+.blue {
+	background-color: #3A5FCD;
+	width: 56px;
+	height: 56px;
+	border: 2px solid;
+	float: left;
+}
+
+/*绿色小方块*/
+.green {
+	background-color: #008B00;
+	width: 56px;
+	height: 56px;
+	border: 2px solid;
+	float: left;
+}
+
+/*黄色小方块*/
+.yellow {
+	background-color: #EEEE00;
+	width: 56px;
+	height: 56px;
+	border: 2px solid;
+	float: left;
+}
+
+/*橘色小方块*/
+.orange {
+	background-color: #CD950C;
+	width: 56px;
+	height: 56px;
+	border: 2px solid;
+	float: left;
+}
+
+/*白色小方块*/
+.white {
+	background-color: #FFFFF0;
+	width: 56px;
+	height: 56px;
+	border: 2px solid;
+	float: left;
+}
+/*魔方动画旋转*/
+@-webkit-keyframes rotate {
+	0% {
+		-webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+	}
+	33.33% {
+		-webkit-transform: rotateX(360deg) rotateY(0deg) rotateZ(0deg);
+	}
+	66.66% {
+		-webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(0deg);
+	}
+	100% {
+		-webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+	}
+}
+@keyframes rotate {
+	0% {
+		transform: rotateX(0deg) rotateY(0deg);
+	}
+	50% {
+		transform: rotateX(360deg) rotateY(0deg);
+	}
+	100% {
+		transform: rotateX(360deg) rotateY(360deg);
+	}
+}
