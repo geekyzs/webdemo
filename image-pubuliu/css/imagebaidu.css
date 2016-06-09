@@ -1,0 +1,152 @@
+body {
+	margin: 0;
+	padding: 2px 0 0;
+	width: auto;
+	font-family: Arial;
+	font-size: 12px;
+	background: #f3f2f3;
+	line-height: 1.5;
+}
+
+
+/*header*/
+
+.header {
+	position: relative;
+	z-index: 35;
+	background-color: #fff;
+	border-bottom: 1px solid #ebebeb;
+	box-shadow: 0 0 3px rgba(150, 150, 150, .2);
+	min-width: 1220px;
+	display: inline-block;
+	min-height: 90px;
+	width: 100%;
+	padding-bottom: 8px;
+}
+
+.fixedHeader {
+	filter: alpha(opacity=96);
+	-moz-opacity: 0.96;
+	opacity: 0.96;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 100000;
+}
+
+.nav {
+	position: relative;
+	z-index: 6;
+	margin-left: 194px;
+	padding-top: 12px;
+	height: 30px;
+	line-height: 30px;
+	/* overflow: hidden;*/
+}
+
+.nav a,
+.nav b {
+	color: #555;
+	margin-right: 10px;
+	font-size: 14px;
+	text-decoration: none;
+	font-family: 'Microsoft YaHei', arial, 'Hiragino Sans GB', sans-serif;
+}
+
+.nav b {
+	color: #333;
+	font-weight: 700;
+}
+
+.search-cont {
+	margin-top: 10px;
+}
+
+.bd-logo {
+	float: left;
+	position: relative;
+	top: 0;
+	margin-left: 40px;
+	margin-right: 16px;
+	width: 137px;
+	height: 46px;
+}
+
+.bd-logo img {
+	display: block;
+	position: relative;
+	top: -16px;
+	z-index: 9;
+	width: 137px;
+	height: 46px;
+}
+
+.bd-search {
+	position: relative;
+	float: left;
+	z-index: 7;
+}
+
+.search-form {
+	font-size: 0;
+	width: 585px;
+	position: relative;
+}
+
+.s_ipt {
+	border: 1px solid #b8b8b8;
+	border-right: 0;
+	vertical-align: top;
+}
+
+.ipt-text {
+	line-height: 32px;
+	border: 1px solid #b8b8b8;
+	display: inline-block;
+	width: 450px;
+	height: 32px;
+	font: 16px/22px arial;
+	padding: 0 10px 0 10px;
+	outline: 0;
+	background: #fff;
+}
+
+.ipt-btn {
+	line-height: 32px;
+	font-size: 16px;
+	color: #333;
+	padding: 0;
+	padding-top: 1px;
+	font-family: 'Hiragino Sans GB', 'Microsoft Yahei', 微软雅黑, 宋体, Tahoma, Arial, Helvetica, STHeiti;
+	display: inline-block;
+	z-index: 0;
+	width: 98px;
+	height: 32px;
+	vertical-align: top;
+	border: 1px solid #ccc;
+	border-left: 0;
+	background: url(../img/search_btn.png) 0 0 no-repeat;
+}
+
+#img-container {
+	margin-left: 50px;
+	min-width: 1280px;
+	width: 100%;
+	background: #f3f2f3;
+}
+
+.img-content {
+	cursor: pointer;
+	padding: 5px;
+}
+
+.img-box {
+	position: relative;
+	float: left;
+}
+
+.img-content img {
+	width: 302px;
+	height: auto;
+}
