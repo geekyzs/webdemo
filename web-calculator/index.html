@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>计算器</title>
+		<link href="./css/style.css" type="text/css" rel="stylesheet" />
+		<link rel="stylesheet" href="./css/bootstrap.min.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<!--计算器-->
+			<div id="calculator">
+				<div id="calcu-inner">
+					<form class="calcu-form" name="calculator" action="" method="get">
+						<!--显示屏-->
+						<div id="calcu-screen">
+							<input type="text" id="screen" class="form-control screen" value="" onfocus="this.blur();" />
+						</div>
+						<!--键盘-->
+						<div id="calcu-btn">
+							<ul class="list-unstyled list-inline">
+								<li onclick="sin()" class="trigonometric">sin</li>
+								<li onclick="cos()" class="trigonometric">cos</li>
+								<li onclick="tan()" class="trigonometric">tan</li>
+								<li class="tool trigonometric del" onclick="backspace()">退格</li>
+								<li class="tool trigonometric del" onclick="clearScreen()">清除</li>
+								<li onclick="orders(7)" class="number">7</li>
+								<li onclick="orders(8)" class="number">8</li>
+								<li onclick="orders(9)" class="number">9</li>
+								<li class="tool number operator" onclick="multiplication()">×</li>
+								<li onclick="sqrt()" class="tool number math"><img src="./img/square.png"></li>
+								<li onclick="orders(4)" class="number">4</li>
+								<li onclick="orders(5)" class="number">5</li>
+								<li onclick="orders(6)" class="number">6</li>
+								<li class="tool number operator" onclick="division()">÷</li>
+								<li class="tool number math" onclick="rem()">%</li>
+								<li onclick="orders(1)" class="number">1</li>
+								<li onclick="orders(2)" class="number">2</li>
+								<li onclick="orders(3)" class="number">3</li>
+								<li class="tool number operator" onclick="addition()">+</li>
+								<li class="tool number math equal" onclick="equal()">=</li>
+								<li onclick="orders(0)" class="number zero">0</li>
+								<li onclick="decimalPoint()" class="number">·</li>
+								<li class="tool number operator" onclick="subtraction()">-</li>
+							</ul>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="./js/jsCalculator.js"></script>
+	</body>
+
+</html>

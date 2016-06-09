@@ -9,5 +9,6 @@
 - [3D-Rubik](https://github.com/geekyzs/webdemo/tree/master/3D-Rubik "3D-Rubik")（CSS3D-3D魔方效果）
 - [flying-wing](https://github.com/geekyzs/webdemo/tree/master/flying-wing "flying-wing")（双飞翼布局）
 - [baidu-responsive](https://github.com/geekyzs/webdemo/tree/master/baidu-responsive "baidu-responsive")（响应式的百度首页）
-- [baidu-responsive](https://github.com/geekyzs/webdemo/tree/master/baidu-responsive "baidu-responsive")（响应式的百度首页）
+- [simple-calculator](https://github.com/geekyzs/webdemo/tree/master/simple-calculator "simple-calculator")（JS简易计算器）
+- [web-calculator](https://github.com/geekyzs/webdemo/tree/master/web-calculator "web-calculator")（完整计算器）
 

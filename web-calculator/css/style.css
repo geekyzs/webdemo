@@ -1,0 +1,102 @@
+body{
+	margin:0 ;
+	padding: 0;
+	background: url(../img/bg.jpg) no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+}
+
+/*计算器*/
+#calculator{
+	width: 460px;
+	height: 410px;
+	background:#F2F2F2 ;
+	border-radius: 8px;
+	margin: 100px auto;
+	border: 1px solid #CDC8B1;
+	box-shadow: 0 -4px 8px 	#EEE8CD;
+}
+
+
+#calcu-inner{
+	width: 430px;
+	height: 420px;
+	margin: 0 auto;
+	position: relative;
+	top: 18px;
+}
+
+/*计算器显示屏幕*/
+.screen{
+	height: 80px !important;
+	text-align: right;
+	font-size:48px !important ;
+}
+
+/*键盘*/
+#calcu-btn{
+	margin-top: 15px;
+}
+
+.list-inline li{
+	float: left;
+	text-align: center;
+	margin-left:10px ;
+	margin-bottom:16px ;
+	width: 76px;
+	cursor:pointer ;
+	border-radius: 5px;
+	border: 2px solid #CDC9C9;
+}
+
+.list-inline li:hover{
+	border: 2px solid #CDB7B5;
+}
+
+/*三角函数键*/
+.trigonometric{
+	height: 32px;
+	line-height:32px ;
+	background: #EEA2AD;
+	font-size:20px ;
+}
+
+/*数字键*/
+.number{
+	height:45px ;
+	line-height: 45px;
+	background:#EEE9BF;
+	font-size:28px ;
+	font-weight: bold;
+	
+}
+
+/*0键*/
+.zero{
+	width:160px !important;
+}
+
+/*删除键*/
+.del{
+	color: #FFF;
+	background:#CD1076;
+}
+
+/*运算符键*/
+.operator{
+	color: #F7F7F7	;
+	background: #CDC1C5;
+}
+
+.math{
+	background:	#A4D3EE ;
+}
+
+/*等于号键*/
+.equal{
+    position: absolute;
+    top: 265px;
+    left: 340px;
+	line-height: 106px;
+	height:106px ;
+}
