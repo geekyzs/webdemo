@@ -1,0 +1,160 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FFFFE0;
+	text-align: center;
+}
+
+
+/*normal box*/
+.nmbox {
+	width: 100px;
+	height: 100px;
+	background-color: #836FFF;
+	margin: 50px 0 0 600px;
+	padding: 10px;
+	border: 2px solid #CD2990;
+}
+
+.normal {
+	width: 100px;
+	height: 100px;
+	background-color: #CD2990;
+	color: #C0FF3E;
+	text-align: center;
+	line-height: 100px;
+	font-size: 12px;
+}
+/*end normal box*/
+
+
+/*monstrous box*/
+.msbox {
+	width: 124px;
+	height: 124px;
+	background-color: #836FFF;
+	margin-left: 600px;
+	margin-bottom: 50px;
+	padding: 10px;
+	border: 2px solid #CD2990;
+	box-sizing: border-box;
+}
+
+.monstrous {
+	background-color: #CD2990;
+	color: #C0FF3E;
+	text-align: center;
+	line-height: 100px;
+	font-size: 12px;
+}
+/*end monstrous box*/
+
+
+/*column 多栏布局*/
+.column {
+	-webkit-column-count: 4;
+	-webkit-column-gap: 8px;
+	-webkit-column-rule: 2px inset #BCEE68;
+}
+/*end column 多栏布局*/
+
+
+/*旧版弹性盒子居中布局*/
+.center {
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	width: 400px;
+	height: 400px;
+	border: 2px solid #FFD700;
+	background-color: #FFE1FF;
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: 50px auto;
+}
+
+.img {
+	width: 200px;
+	height: 200px;
+	background-image: url(../img/200.jpg);
+	line-height: 200px;
+	color: #C0FF3E;
+}
+/*end 旧版弹性盒子居中布局*/
+
+
+/*flexbox水平排列*/
+.containerrow {
+	width: 600px;
+	background-color: #CDB7B5;
+	margin-left: 400px;
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+}
+
+.first {
+	height: 100px;
+	background-color: #FF4040;
+	-webkit-flex: 2;
+	text-align: center;
+	line-height: 100px;
+}
+
+.second {
+	height: 100px;
+	background-color: #9932CC;
+	-webkit-flex: 1;
+	text-align: center;
+	line-height: 100px;
+}
+
+.third {
+	height: 100px;
+	background-color: #BFEFFF;
+	-webkit-flex: 3;
+	text-align: center;
+	line-height: 100px;
+}
+/*end flexbox水平排列*/
+
+
+/*flexbox垂直排列+排序*/
+.containercol {
+	width: 200px;
+	height: 300px;
+	background-color: #CDB7B5;
+	margin-left: 600px;
+	margin-bottom: 100px;
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+}
+
+.first1 {
+	background-color: #FF4040;
+	-webkit-flex: 1;
+	text-align: center;
+	-webkit-order: 3;
+}
+
+.second1 {
+	background-color: #9932CC;
+	-webkit-flex: 3;
+	text-align: center;
+	-webkit-order: 1;
+}
+
+.third1 {
+	background-color: #BFEFFF;
+	-webkit-flex: 2;
+	text-align: center;
+	-webkit-order: 4;
+}
+
+.fourth {
+	background-color: #CDCD00;
+	-webkit-flex: 1;
+	text-align: center;
+	-webkit-order: 2;
+}
+/*end flexbox垂直排列+排序*/
