@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>简易计算器</title>
+	</head>
+
+	<body>
+		<!--简易计算器-->
+		<div>
+			<h3>简易计算器</h3>
+			<form onclick="return false">
+				<input id="number1" type="number" required="required" />
+				<select id="operation">
+					<option value="+">+</option>
+					<option value="-">-</option>
+					<option value="*">*</option>
+					<option value="/">/</option>
+					<option value="加">加</option>
+					<option value="减">减</option>
+					<option value="乘">乘</option>
+					<option value="除">除</option>
+				</select>
+				<input id="number2" type="number" required="required" />
+				<button onclick="count()">等于</button>
+				<input id="showresult" type="text" placeholder="结果" />
+			</form>
+
+		</div>
+		<script type="text/javascript" src="./js/calculator.js"></script>
+	</body>
+
+</html>
