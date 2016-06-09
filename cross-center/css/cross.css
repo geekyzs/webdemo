@@ -1,0 +1,57 @@
+.container {
+	height: 312px;
+	width: 312px;
+	background-color: #FFFFF0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -156px;
+	margin-top: -156px;
+}
+
+.container>div {
+	width: 100px;
+	height: 100px;
+	box-shadow: 8px 8px 5px #888888;
+}
+
+.top {
+	background-color: #FF83FA;
+	position: absolute;
+	left: 106px;
+	top: 3px;
+}
+
+.centre {
+	background-color: #FFF68F;
+	position: absolute;
+	left: 106px;
+	top: 106px;
+	/*line-height: 100px;
+	text-align: center;*/
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+}
+
+.below {
+	background-color: #98FB98;
+	position: absolute;
+	top: 209px;
+	left: 106px;
+}
+
+.left {
+	background-color: #008B8B;
+	position: absolute;
+	top: 106px;
+	left: 3px;
+}
+
+.right {
+	background-color: #CDCD00;
+	position: absolute;
+	left: 209px;
+	top: 106px;
+}
+
