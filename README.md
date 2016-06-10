@@ -16,4 +16,5 @@
 - [image-pubuliu](https://github.com/geekyzs/webdemo/tree/master/image-pubuliu "image-pubuliu")（瀑布流布局-百度图片）
 - [news-php](https://github.com/geekyzs/webdemo/tree/master/news-php "news-php")（PHP后台-手机百度新闻）
 - [news-nodejs](https://github.com/geekyzs/webdemo/tree/master/news-nodejs "news-nodejs")（nodejs后台-手机百度新闻）
+- [baidu-FIS](https://github.com/geekyzs/webdemo/tree/master/baidu-FIS "baidu-FIS")（FIS-百度首页）
 
