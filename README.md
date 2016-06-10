@@ -19,5 +19,7 @@
 - [baidu-FIS](https://github.com/geekyzs/webdemo/tree/master/baidu-FIS "baidu-FIS")（FIS-百度首页）
 - [jkxy-sass](https://github.com/geekyzs/webdemo/tree/master/jkxy-sass "jkxy-sass")（sass-极客学院首页）
 - [busStop-sass](https://github.com/geekyzs/webdemo/tree/master/busStop-sass "busStop-sass")（sass-公交站牌）
+- [baidu-Singleton](https://github.com/geekyzs/webdemo/tree/master/baidu-Singleton "baidu-Singleton")（单例模式-百度首页）
+
 
 
