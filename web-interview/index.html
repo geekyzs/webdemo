@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>前端面试题</title>
+		<link href="./css/index-9c99e0556c.min.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<!--头部标题-->
+		<header class="container header">
+			<div class="center-block text-center">
+				<h1>前端开发面试题</h1>
+				<cite title="Source Title">2016-6-6&nbsp;16:16:56&nbsp;&nbsp;&nbsp;geekyzs</cite>
+			</div>
+		</header>
+		<div class="line"></div>
+		<!--中间内容区-->
+		<article class="container">
+			<section class="question">
+				<div class="question-lsit">
+					<p class="text-primary"><strong>1.JavaScript 作用域和作用域链</strong></p>
+					<p class="text-success">作用域就是变量和函数的可访问范围，控制着变量和函数的可见性与生命周期，在JavaScript中变量的作用域有全局作用域和局部作用域。</p>
+					<p class="text-success">JavaScript并没有块及的作用域，只有函数级作用域：变量在声明它们的函数体及其子函数内是可见的。</p>
+					<p class="text-success">变量没有在函数内声明或者声明的时候没有带var就是全局变量，拥有全局作用域，window对象的所有属性拥有全局作用域；在代码任何地方都可以访问，函数内部声明并且以var修饰的变量就是局部变量，只能在函数体内使用，函数的参数虽然没有使用var但仍然是局部变量。</p>
+					<p class="text-success">当代码在一个环境中执行时，会创建变量对象的一个作用域链（scope chain,不简称sc）来保证对执行环境有权访问的变量和函数的有序访问。作用域第一个对象始终是当前执行代码所在环境的变量对象（VO）</p>
+					<p class="text-success">如果执行环境是函数，那么将其活动对象（activation object, AO）作为作用域链第一个对象，第二个对象是包含环境，下一个是包含环境的包含环境。</p>
+					<p class="text-success">在函数运行过程中标识符的解析是沿着作用域链一级一级搜索的过程，从第一个对象开始，逐级向后回溯，直到找到同名标识符为止，找到后不再继续遍历，找不到就报错。</p>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>2.JavaScript变量声明提升</strong></p>
+					<p class="text-success">javascript的变量声明具有hoisting机制，JavaScript引擎在执行的时候，会把所有变量的声明都提升到当前作用域的最前面。</p>
+					<p class="text-success">请注意函数表达式并没有被提升，这也是函数表达式与函数声明的区别</p>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>3.JavaScript原型链</strong></p>
+					<p class="text-success">在JavaScript中,一共有两种类型的值,原始值和对象值.每个对象都有一个内部属性[[prototype]],我们通常称之为原型.原型的值可以是一个对象,也可以是null.如果它的值是一个对象,则这个对象也一定有自己的原型.这样就形成了一条线性的链,我们称之为原型链.</p>
+					<p class="text-success">访问一个对象的原型可以使用ES5中的Object.getPrototypeOf方法,或者ES6中的__proto__属性.</p>
+					<p class="text-success">原型链的作用是用来实现继承,比如我们新建一个数组,数组的方法就是从数组的原型上继承而来的.</p>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>4.Ajax跨域的几种方法</strong></p>
+					<p class="text-success">1、通过jsonp跨域。2、通过修改document.domain来跨子域。3、使用window.name来进行跨域。4、使用HTML5中新引进的window.postMessage方法来跨域传送数据</p>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>5.jsonp跨域原理</strong></p>
+					<p class="text-success">通过script标签引入一个js文件，这个js文件载入成功后会执行我们在url参数中指定的函数，并且会把我们需要的json数据作为参数传入。所以jsonp是需要服务器端的页面进行相应的配合的。</p>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>6.前端页面如何优化</strong>
+						<p class="text-success">雅虎WEB前端网站优化 -- 34条军规</p>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>7.常用JS框架，是否使用过jQuery，jQuery的优点。</strong></p>
+					<p class="text-success">Dojo 、Scriptaculous 、Prototype 、yui-ext 、Jquery 、Mochikit、mootools 、moo.fx</p>
+					<p class="text-success">最少的代码做最多的事情，这是jQuery的口号，而且名副其实。使用它的高级selector，开发者只需编写几行代码就能实现令人惊奇的效果。开发者无需过于担忧浏览器差异，它除了还完全支持Ajax，而且拥有许多提高开发者编程效率的其它抽象概念。jQuery把JavaScript带到了一个更高的层次</p>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>8.2.如何消除一个数组里面重复的元素？</strong></p>
+					<pre class="pre-scrollable">var arr=[1,2,3,3,4,4,5,5,6,1,9,3,25,4];
+        function deRepeat(){
+            var newArr=[];
+            var obj={};
+            var index=0;
+            var l=arr.length;
+           for(var i=0; i&lt;l;i++){
+                if(obj[arr[i]]==undefined)
+                  {
+                    obj[arr[i]]=1;
+                    newArr[index++]=arr[i];
+                  }
+                else if(obj[arr[i]]==1)
+                  continue;
+            }
+            return newArr;
+        }
+        var newArr2=deRepeat(arr);
+        alert(newArr2); //输出1,2,3,4,5,6,9,25</pre>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>9.在Javascript中什么是伪数组？如何将伪数组转化为标准数组？</strong></p>
+					<p class="text-success">伪数组（类数组）：无法直接调用数组方法或期望length属性有什么特殊的行为，但仍可以对真正数组遍历方法来遍历它们。典型的是函数的argument参数，还有像调用getElementsByTagName,document.childNodes之类的,它们都返回NodeList对象都属于伪数组。可以使用Array.prototype.slice.call(fakeArray)将数组转化为真正的Array对象。</p>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>10.原生JS的window.onload与Jquery的$(document).ready(function(){})有什么不同？</strong></p>
+					<p class="text-success">window.onload()方法是必须等到页面内包括图片的所有元素加载完毕后才能执行。</p>
+					<p class="text-success">$(document).ready()是DOM结构绘制完毕后就执行，不必等到加载完毕。</p>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>11.!DOCTYPE标签的定义</strong></p>
+					<p class="text-success">!DOCTYPE声明位于文档中的最前面的位置，处于&lt;html>标签之前。此标签可告知浏览器文档使用哪种HTML或XHTML规范。</p>
+					<p class="text-success">该标签可声明三种DTD类型，分别表示严格版本、过渡版本以及基于框架的HTML版本。（假如文档中的标记不遵循doctype声明所指定的DTD，这个文档除了不能通过代码校验之外，还有可能无法在浏览器中正确显示。）</p>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>12.行内元素有哪些?块级元素有哪些?CSS的盒模型?</strong></p>
+					<p class="text-success">块级元素：div p h1 h2 h3 h4 form ul</p>
+					<p class="text-success">行内元素: a b br i span input select</p>
+					<p class="text-success">css盒模型:内容，border ,margin，padding</p>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>13.CSS层叠是什么？介绍一下。</strong></p>
+					<p class="text-success">CSS层叠是指CSS样式在针对同一元素配置同一属性时，依据层叠规则（权重）来处理冲突，选择应用权重高的CSS选择器所指定的属性，一般也被描述为权重高的覆盖权重低的，因此也称作层叠。每个CSS选择器都会有一个权重（行内1000，id100，class10，tag1、可以这样认为），当两个选择器同时配置同一元素的同一属性时（比如一个设置color：red，另一个color：black），就会产生冲突，而解决冲突的方案就是CSS选择器的权重，权重高的来覆盖权重低的。</p>
+					<p class="text-success">另外，继承的属性是权重重最轻的，会被上面的四个定义方式覆盖。</p>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>14.CSShack</strong></p>
+					<p class="text-success">
+						“-″减号是IE6专有的hack</br> “\9″ IE6/IE7/IE8/IE9/IE10都生效</br> “\0″ IE8/IE9/IE10都生效，是IE8/9/10的hack </br>“\9\0″ 只对IE9/IE10生效，是IE9/10的hack
+					</p>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>15.HTTP协议的状态消息都有哪些？</strong></p>
+					<p class="text-success">100-199 用于指定客户端应相应的某些动作。</br> 200-299 用于表示请求成功。 </br>300-399 用于已经移动的文件并且常被包含在定位头信息中指定新的地址信息。</br> 400-499 用于指出客户端的错误。 </br>500-599 用于支持服务器错误。 </br>403 (SC_FORBIDDEN)的意思是除非拥有授权否则服务器拒绝提供所请求的资源。这个状态经常会由于服务器上的损坏文件或目录许可而引起。 </br>404 (SC_NOT_FOUND)状态每个网络程序员可能都遇到过，他告诉客户端所给的地址无法找到任何资源。它是表示“没有所访问页面”的标准方式。
+					</p>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>16.AJAX是什么? AJAX的交互模型(流程)?同步和异步的区别?</strong></p>
+					<p class="text-success">ajax是异步的 JavaScript 和 XML。通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。</p>
+					<p class="text-success"><img src="./img/2011112919211178.gif" height="420" /></p>
+					<p class="text-success">同步：脚本会停留并等待服务器发送回复然后再继续<br/>异步：脚本允许页面继续其进程并处理可能的回复</p>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>17.简述JavaScript封装</strong></p>
+					<p class="text-success">Javascript是一种基于对象（object-based）的语言，你遇到的所有东西几乎都是对象。但是，它又不是一种真正的面向对象编程（OOP）语言，因为它的语法中没有class（类）。 </p>
+					<p class="text-success">在JavaScript中，并没有显示的声明私有成员的关键字等。所以要想实现封装/信息隐藏就需要从另外的思路出发。我们可以使用闭包的概念来创建只允许从对象内部访问的方法和属性，来达到封装的要求。</p>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>18.什么是闭包？</strong></p>
+					<p class="text-success">闭包 是指有权访问另一个函数作用域中的变量的函数，创建闭包的最常见的方式就是在一个函数内创建另一个函数，通过另一个函数访问这个函数的局部变量</p>
+					<p class="text-success">闭包的缺点就是常驻内存，会增大内存使用量，使用不当很容易造成内存泄露。</p>
+					<p class="text-success">闭包是javascript语言的一大特点，主要应用闭包场合主要是为了：设计私有的方法和变量。</p>
+					<p class="text-success">一般函数执行完毕后，局部活动对象就被销毁，内存中仅仅保存全局作用域。但闭包的情况不同！</p>
+					<pre class="pre-scrollable">   function aaa() {  
+          var a = 1;  
+          return function(){
+           alert(a++)
+          };  
+        }         
+        var fun = aaa();  
+        fun();// 1 执行后 a++，，然后a还在~  
+        fun();// 2   
+        fun = null;//a被回收！！</pre>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>19.什么是HTML5？</strong></p>
+					<p class="text-success">答：HTML5是最新的HTML标准，他的主要目标是提供所有内容而不需要任何的像flash，silverlight等的额外插件，这些内容来自动画，视频，富GUI等,HTML5是万维网联盟（W3C）和网络超文本应用技术工作组（WHATWG）之间合作输出的。　 </p>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>20.为什么HTML5里面我们不需要DTD（Document Type Definition文档类型定义）？</strong></p>
+					<p class="text-success">答：HTML5没有使用SGML或者XHTML，他是一个全新的东西，因此你不需要参考DTD，对于HTML5，你仅需放置下面的文档类型代码告诉浏览器识别这是HTML5文档 。</p>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>21.谈谈对this的理解？</strong></p>
+					<p class="text-success">this是Javascript语言的一个关键字它代表函数运行时，自动生成的一个内部对象，只能在函数内部使用,随着函数使用场合的不同，this的值会发生变化。但是有一个总的原则，那就是this指的是，调用函数的那个对象。 </p>
+					<p class="text-success">情况一：纯粹的函数调用 ,这是函数的最通常用法，属于全局性调用，因此this就代表全局对象Global。 </p>
+					<p class="text-success">情况二：作为对象方法的调用 ,函数还可以作为某个对象的方法调用，这时this就指这个上级对象。 </p>
+					<p class="text-success">情况三 作为构造函数调用 ,所谓构造函数，就是通过这个函数生成一个新对象（object）。这时，this就指这个新对象。 </p>
+					<p class="text-success">情况四： apply调用 ,apply()是函数对象的一个方法，它的作用是改变函数的调用对象，它的第一个参数就表示改变后的调用这个函数的对象。因此，this指的就是这第一个参数。 </p>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>22.js延迟加载的方式有哪些？</strong></p>
+					<p class="text-success">答：defer和async、动态创建DOM方式（创建script，插入到DOM中，加载完毕后callBack）、按需异步载入js</p>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>23.对Node的优点和缺点提出了自己的看法？</strong></p>
+					<p class="text-success">（优点）因为Node是基于事件驱动和无阻塞的，所以非常适合处理并发请求， 因此构建在Node上的代理服务器相比其他技术实现（如Ruby）的服务器表现要好得多。 此外，与Node代理服务器交互的客户端代码是由javascript语言编写的， 因此客户端和服务器端都用同一种语言编写，这是非常美妙的事情。</p>
+					<p class="text-success">（缺点）Node是一个相对新的开源项目，所以不太稳定，它总是一直在变， 而且缺少足够多的第三方库支持。看起来，就像是Ruby/Rails当年的样子。</p>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>24.一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？</strong></p>
+					<p class="text-success"> 分为4个步骤：</p>
+					<p class="text-success"> （1），当发送一个URL请求时，不管这个URL是Web页面的URL还是Web页面上每个资源的URL，浏览器都会开启一个线程来处理这个请求，同时在远程DNS服务器上启动一个DNS查询。这能使浏览器获得请求对应的IP地址。 <br/>（2）， 浏览器与远程Web服务器通过TCP三次握手协商来建立一个TCP/IP连接。该握手包括一个同步报文，一个同步-应答报文和一个应答报文，这三个报文在 浏览器和服务器之间传递。该握手首先由客户端尝试建立起通信，而后服务器应答并接受客户端的请求，最后由客户端发出该请求已经被接受的报文。
+						<br/>（3），一旦TCP/IP连接建立，浏览器会通过该连接向远程服务器发送HTTP的GET请求。远程服务器找到资源并使用HTTP响应返回该资源，值为200的HTTP响应状态表示一个正确的响应。 <br/>（4）此时，Web服务器提供资源服务，客户端开始下载资源。</p>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary"><strong>25.js操作获取和设置cookie</strong></p>
+					<pre class="pre-scrollable">//创建cookie
+function setCookie(name, value, expires, path, domain, secure) {
+    var cookieText = encodeURIComponent(name) + '=' + encodeURIComponent(value);
+    if (expires instanceof Date) {
+        cookieText += '; expires=' + expires;
+    }
+    if (path) {
+        cookieText += '; expires=' + expires;
+    }
+    if (domain) {
+        cookieText += '; domain=' + domain;
+    }
+    if (secure) {
+        cookieText += '; secure';
+    }
+    document.cookie = cookieText;
+}
+
+//获取cookie
+function getCookie(name) {
+    var cookieName = encodeURIComponent(name) + '=';
+    var cookieStart = document.cookie.indexOf(cookieName);
+    var cookieValue = null;
+    if (cookieStart > -1) {
+        var cookieEnd = document.cookie.indexOf(';', cookieStart);
+        if (cookieEnd == -1) {
+            cookieEnd = document.cookie.length;
+        }
+        cookieValue = decodeURIComponent(document.cookie.substring(cookieStart + cookieName.length, cookieEnd));
+    }
+    return cookieValue;
+}
+
+//删除cookie
+function unsetCookie(name) {
+    document.cookie = name + "= ; expires=" + new Date(0);
+}</pre>
+				</div>
+				<div class="question-lsit">
+					<p class="text-primary">
+						<h3>前端开发面试知识点大纲：</h3></p>
+					<p class="text-primary"><strong>HTML&CSS：</strong></p>
+					<p class="text-success">对Web标准的理解、浏览器内核差异、兼容性、hack、CSS基本功：布局、盒子模型、选择器优先级及使用、HTML5、CSS3、移动端适应</p>
+					<p class="text-primary"><strong>JavaScript：</strong></p>
+					<p class="text-success">数据类型、面向对象、继承、闭包、插件、作用域、跨域、原型链、模块化、自定义事件、内存泄漏、事件机制、异步装载回调、模板引擎、Nodejs、JSON、ajax等。</p>
+					<p class="text-primary"><strong>其他：</strong></p>
+					<p class="text-success">HTTP、安全、正则、优化、重构、响应式、移动端、团队协作、可维护、SEO、UED、架构、职业生涯</p>
+					<p class="text-success"><img src="./img/o_web.png" height="620" /></p>
+				</div>
+			</section>
+		</article>
+		<div class="line"></div>
+		<footer class="container footer">
+			<div class="text-center">
+				<p><span>©2016&nbsp;极客&nbsp;</span></p>
+			</div>
+			<div class="gotop">
+				<span class="top"></span>
+			</div>
+		</footer>
+		<script type="text/javascript" src="./js/index-dee41b3619.min.js" ></script>
+	</body>
+
+</html>
