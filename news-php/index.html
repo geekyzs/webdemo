@@ -15,8 +15,9 @@
 	<body>
 		<!--header-->
 		<header>
-			<div class="ui-new-toolbar"><a href="ManageSystem.html" class="admim" target="_blank">admim</a></div>
-
+			<div class="ui-new-toolbar">
+				<a href="ManageSystem.html" target="_blank" class="admin">新闻管理</a>
+			</div>
 		</header>
 		<!--content-->
 		<article class="index_view_content">
@@ -45,7 +46,15 @@
 				</ul>
 			</nav>
 			<section class="index_view_sections">
-				<div class="index-view-subpage"></div>
+				<div class="index-view-subpage">
+					<div class="index-view-subpage-feed">
+						<div id="loading"></div>
+						<div id="list">
+							<ul class="list-unstyled">
+							</ul>
+						</div>
+					</div>
+				</div>
 			</section>
 		</article>
 		<!--footer-->
@@ -66,7 +75,7 @@
 		<!--回到顶部-->
 		<div class="gotop-globalview"></div>
 		<script type="text/javascript" src="./js/jquery-2.2.3.min.js"></script>
-		<script type="text/javascript" src="./js/index.js"></script>
+		<script type="text/javascript" src="./js/news.js"></script>
 	</body>
 
 </html>

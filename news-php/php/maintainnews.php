@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>新闻管理系统</title>
+<title>修改，删除新闻</title>
 <link rel="stylesheet" href="../css/bootstrap.min.css" />
 <link rel="stylesheet" href="../css/Systemstyle.css" />
 </head>
@@ -22,7 +22,7 @@
 		<?php
         include_once('connect.php');
 		//执行SQL 得到结果集
-		$result =mysql_query("SELECT * FROM `news` WHERE 1");
+		$result =mysql_query("SELECT * FROM news ORDER BY id DESC");
 		while($row=mysql_fetch_array($result)){
 		?>
 			<tr>

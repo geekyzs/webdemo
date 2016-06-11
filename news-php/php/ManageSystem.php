@@ -1,6 +1,6 @@
 <?php
 include_once('connect.php');
-$query = mysql_query("SELECT * FROM `news` WHERE 1");
+$query = mysql_query("SELECT * FROM news ORDER BY id DESC");
 while($row=mysql_fetch_array($query)){
 	 $arr['tabe'][] = array(
 	 	'id' => $row['id'],

@@ -1,8 +1,8 @@
 $(function() {
 	//导航
 	var sInfo = {
-		category: '推荐'
-	};
+					category: '推荐'
+				};
 	getData(sInfo);
 	$(".nav-list li span").each(function(index) {
 			$(this).click(function() {
@@ -17,18 +17,18 @@ $(function() {
 		//ajax
 	function getData(sInfo) {
 		$.ajax({
-			type: 'get',
-			url: '/news',
+			type: 'post',
+			url: 'php/news.php',
 			dataType: 'json',
 			data: sInfo,
 			beforeSend: function() {
 				$("#loading").html("<img id='loadin'g src='./img/loading.gif'>");
 			},
-			success: function(msg) {
+			success: function(json) {
 				$("#loading").html("");
 				$("#list ul").empty();
 				var li = "";
-				var list = msg;
+				var list = json.list;
 				$.each(list, function(index, array) { //遍历json数据列
 					li += "<li><a href='#'><img src='" + array['pic'] + "'><p>" + array['title'].substring(0) + "</p></a><b>" + array['time'] + "</b></li>";
 				});
