@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2016-05-15 21:34:35
+-- Generation Time: 2016-06-14 09:26:56
 -- 服务器版本： 5.6.24
 -- PHP Version: 5.6.8
 
@@ -30,22 +30,22 @@ CREATE TABLE IF NOT EXISTS `news` (
   `id` int(11) NOT NULL,
   `title` varchar(100) NOT NULL,
   `pic` varchar(255) NOT NULL,
-  `time` date NOT NULL,
+  `time` varchar(100) NOT NULL,
   `category` varchar(100) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=206 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=285 DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `news`
 --
 
 INSERT INTO `news` (`id`, `title`, `pic`, `time`, `category`) VALUES
-(2, '中国游客助日本贸易5年来首顺差：赴日爆买', 'http://t11.baidu.com/it/u=http://r3.sinaimg.cn/10230/2015/1116/b9/6/45554295/auto.jpg&amp;fm=36', '2016-05-14', '推荐'),
+(2, '中国游客助日本贸易5年来首顺差：赴日爆买', 'http://t11.baidu.com/it/u=http://r3.sinaimg.cn/10230/2015/1116/b9/6/45554295/auto.jpg&amp;fm=36', '2016-05-13', '推荐'),
 (3, '无业男冒充军人骗财骗色 女孩痴心不改', 'http://t10.baidu.com/it/u=http://inews.gtimg.com/newsapp_bt/0/295873274/1000&fm=94', '2016-05-13', '推荐'),
 (4, '马英九回应卸任后是否会访问大陆：暂无计划', 'http://t10.baidu.com/it/u=http://inews.gtimg.com/newsapp_ls/0/295990314_150120/0&fm=36', '2016-05-13', '推荐'),
 (5, '证监会换帅80天 刘士余监管思路浮出水面', 'http://t10.baidu.com/it/u=http://p3.ifengimg.com/ifengimcp/pic/20160513/d115a67e3a7a1a09ba1b_size10_w329_h220.jpg&fm=36', '2016-05-13', '推荐'),
 (6, '上证所二度问询西藏旅游：并购拉卡拉是否构成借壳上市', 'http://t12.baidu.com/it/u=http://image.thepaper.cn/image/4/919/818.jpg&fm=36', '2016-05-13', '推荐'),
 (7, '联合国调降2016年全球经济增长预估至2.4%', 'http://t11.baidu.com/it/u=http://n.sinaimg.cn/finance/transform/20160513/O9Qd-fxsenvm0351600.jpg&fm=36', '2016-05-13', '推荐'),
-(8, '男子向中国驻韩大使馆投掷污物被抓 身份不详', 'http://t10.baidu.com/it/u=http://inews.gtimg.com/newsapp_ls/0/295895001_150120/0&fm=36', '2016-05-13', '推荐'),
+(8, '中国游客助日本贸易5年来首顺差：赴日爆买', 'http://t11.baidu.com/it/u=http://r3.sinaimg.cn/10230/2015/1116/b9/6/45554295/auto.jpg&amp;fm=36', '2016-05-13', '推荐'),
 (9, '世界黄金协会报告：中国实物黄金投资将整体保持健康稳定', 'http://t10.baidu.com/it/u=http://z1.dfcfw.com/2016/5/12/20160512162019921851891.jpg&fm=36', '2016-05-13', '推荐'),
 (10, '市场质疑两次加息前景 美联储恐重演年末加息 ', 'http://t10.baidu.com/it/u=http://posts.cdn.wallstcn.com/47/25/2d/20160513market-fed-hike.jpg!article.foil&fm=36', '2016-05-13', '推荐'),
 (11, '二线城市土地“高烧” 房企：即便亏钱了也要拿高价地 ', 'http://t12.baidu.com/it/u=http://r3.sinaimg.cn/10230/2016/0512/07/e/31602852/auto.jpg&fm=36', '2016-05-13', '推荐'),
@@ -95,7 +95,7 @@ INSERT INTO `news` (`id`, `title`, `pic`, `time`, `category`) VALUES
 (55, '联合国调降2016年全球经济增长预估至2.4%', 'http://t11.baidu.com/it/u=http://n.sinaimg.cn/finance/transform/20160513/O9Qd-fxsenvm0351600.jpg&fm=36', '2016-05-13', '本地'),
 (56, '男子向中国驻韩大使馆投掷污物被抓 身份不详', 'http://t10.baidu.com/it/u=http://inews.gtimg.com/newsapp_ls/0/295895001_150120/0&fm=36', '2016-05-13', '本地'),
 (57, '世界黄金协会报告：中国实物黄金投资将整体保持健康稳定', 'http://t10.baidu.com/it/u=http://z1.dfcfw.com/2016/5/12/20160512162019921851891.jpg&fm=36', '2016-05-13', '本地'),
-(58, '市场质疑两次加息前景 美联储恐重演年末加息 ', 'http://t10.baidu.com/it/u=http://posts.cdn.wallstcn.com/47/25/2d/20160513market-fed-hike.jpg!article.foil&fm=36', '2016-05-13', '本地'),
+(58, '市场质疑两次加息前景 美联储恐重演年末加息 ', 'http://t10.baidu.com/it/u=http://posts.cdn.wallstcn.com/47/25/2d/20160513market-fed-hike.jpg!article.foil&amp;fm=36', '2016-05-14', '推荐'),
 (59, '二线城市土地“高烧” 房企：即便亏钱了也要拿高价地 ', 'http://t12.baidu.com/it/u=http://r3.sinaimg.cn/10230/2016/0512/07/e/31602852/auto.jpg&fm=36', '2016-05-13', '本地'),
 (60, '搜狐快评:父行贿自首 掏鸟案量刑问题再起波澜', 'http://t10.baidu.com/it/u=http://n1.itc.cn/img7/adapt/wb/bindTVPic/2016/05/13/146311843095680136_720_1000.JPEG&fm=36', '2016-05-13', '本地'),
 (61, '双少65分雷霆晋级西决 莱昂纳德22+9马刺告别 ', 'http://t12.baidu.com/it/u=http://r3.sinaimg.cn/10230/2016/0513/4a/3/42598710/950x732.jpg&fm=36', '2016-05-13', '本地'),
@@ -180,8 +180,29 @@ INSERT INTO `news` (`id`, `title`, `pic`, `time`, `category`) VALUES
 (140, '中国试射最强洲际导弹：这东西到底有多厉害', 'http://t12.baidu.com/it/u=http://3.38mhw.com/2016041/7973.jpg&fm=36', '2016-05-13', '军事'),
 (141, '美军选定新轻型侦察车 可通过CH-47携带', 'http://t10.baidu.com/it/u=http://photocdn.sohu.com/20160513/Img449197626.jpg&fm=36', '2016-05-13', '军事'),
 (142, '山东现重型航空炸弹 引爆后炸出直径10米巨坑', 'http://t11.baidu.com/it/u=http://n1.itc.cn/img7/adapt/wb/common/2016/05/13/146309856208713057_620_1000.JPEG&fm=36', '2016-05-13', '军事'),
-(143, '宏亮瞻局｜南千岛群岛死结与日俄战争2.0畅想', 'http://t10.baidu.com/it/u=http://image.thepaper.cn/image/4/921/202.jpg&fm=36', '2016-05-13', '推荐'),
-(172, '习近平谈从严治党：打铁还需自身硬', 'http://d.hiphotos.baidu.com/news/q%3D100/sign=983038dd4c36acaf5fe092fc4cdb8d03/d009b3de9c82d1589f602255870a19d8bd3e4277.jpg', '2016-05-15', '推荐');
+(143, '宏亮瞻局｜南千岛群岛死结与日俄战争2.0畅想', 'http://t10.baidu.com/it/u=http://image.thepaper.cn/image/4/921/202.jpg&amp;fm=36', '2016-05-14', '推荐'),
+(172, '习近平谈从严治党：打铁还需自身硬', 'http://d.hiphotos.baidu.com/news/q%3D100/sign=983038dd4c36acaf5fe092fc4cdb8d03/d009b3de9c82d1589f602255870a19d8bd3e4277.jpg', '2016-05-13', '推荐');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `user`
+--
+
+CREATE TABLE IF NOT EXISTS `user` (
+  `userid` int(11) NOT NULL,
+  `username` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+
+--
+-- 转存表中的数据 `user`
+--
+
+INSERT INTO `user` (`userid`, `username`, `password`) VALUES
+(6, 'geekyzs', 'e10adc3949ba59abbe56e057f20f883e'),
+(7, 'yzs', '202cb962ac59075b964b07152d234b70'),
+(8, 'haha', '202cb962ac59075b964b07152d234b70');
 
 --
 -- Indexes for dumped tables
@@ -194,6 +215,12 @@ ALTER TABLE `news`
   ADD PRIMARY KEY (`id`), ADD KEY `类型` (`category`), ADD KEY `category_2` (`category`), ADD FULLTEXT KEY `category` (`category`);
 
 --
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`userid`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -201,7 +228,12 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=206;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=285;
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

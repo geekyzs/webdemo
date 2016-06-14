@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>
-			新闻管理系统
+			编辑新闻
 		</title>
 		<link rel="stylesheet" href="../css/bootstrap.min.css" />
 	</head>
@@ -18,13 +18,13 @@ if($row = mysql_fetch_array($result)){
 			<form action="update.php" method="post" class="form-horizontal">
 				<div class="form-group">
 					<label for="id" class="col-sm-2 control-label">ID</label>
-					<div class="col-sm-10">
-						<input type="number" name="id" class="form-control"  value="<?php echo $row['id']?>"   required="required"/>
+					<div class="col-sm-1">
+						<input type="number" name="id" class="form-control"  value="<?php echo $row['id']?>"   required="required" readonly="readonly"/>
 					</div>
 				</div>
 				<div class="form-group">
 					<label for="category" class="col-sm-2 control-label">类别</label>
-					<div class="col-sm-3">
+					<div class="col-sm-1">
 						<select name="category" class="form-control"  value="<?php echo $row['category']?>" >
 							<option>
 								推荐
@@ -49,19 +49,19 @@ if($row = mysql_fetch_array($result)){
 				</div>
 				<div class="form-group">
 					<label for="title" class="col-sm-2 control-label">标题</label>
-					<div class="col-sm-10">
+					<div class="col-sm-6">
 						<input type="text" name="title" class="form-control"  value="<?php echo $row['title']?>"   required="required"/>
 					</div>
 				</div>
 				<div class="form-group">
 					<label for="pic" class="col-sm-2 control-label">图片</label>
-					<div class="col-sm-10">
+					<div class="col-sm-6">
 						<input type="text" name="pic" class="form-control" value="<?php echo $row['pic']?>" required="required" />
 					</div>
 				</div>
 				<div class="form-group">
 					<label for="time" class="col-sm-2 control-label">时间</label>
-					<div class="col-sm-5">
+					<div class="col-sm-3">
 						<input type="date" name="time" class="form-control" value="<?php echo $row['time']?>" required="required">
 					</div>
 				</div>

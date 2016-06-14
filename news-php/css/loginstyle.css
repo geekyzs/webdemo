@@ -1,0 +1,74 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: url(../img/bg.jpg) #f8f6e9 no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	line-height: 1.5;
+}
+
+/*后台管理系统登录*/
+
+.login-container {
+	margin:200px auto;
+}
+
+/*标题*/
+.headline{
+	text-align: center;
+	color: #FFF;
+}
+
+
+.login-box{
+	max-width: 420px;
+    border-bottom: 0;
+    padding: 6px;
+    border-radius: 5px;
+	box-shadow: 0 -12px 18px #0d957a
+}
+
+/*用户头像*/
+.portrait {
+	float: left;
+	margin: 0 auto;
+	margin-right: 20px;
+}
+
+.login-form{
+	float: left;
+	max-width: 330px;
+	margin: 0 auto;
+}
+
+.login {
+	position: relative;
+	font-size: 16px;
+	height: auto;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*用户名*/
+.username{
+	margin-bottom: 14px;
+	background: url(../img/login_user.png) 0 0 #bdbdbd no-repeat;
+	padding-left: 60px;
+	color: #FFFFFF;
+}
+
+/*密码*/
+.password{
+	margin-bottom: 10px;
+	background: url(../img/login_pas.png) 0 0 #bdbdbd no-repeat;
+	padding-left: 60px;
+	color: #FFFFFF;
+}
+
+.reg{
+	margin-top: 6px;
+}
+
+

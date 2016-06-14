@@ -2,13 +2,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>修改，删除新闻</title>
-<link rel="stylesheet" href="../css/bootstrap.min.css" />
-<link rel="stylesheet" href="../css/Systemstyle.css" />
+<title>新闻管理</title>
 </head>
 <body>
 <div align="center">
-	<table class="table table-hover table-bordered  table-striped" style="width: 80%;">
+	<table class="table table-hover table-bordered  table-striped">
 			<thead>
 				<tr class="danger t-header">
 					<th id="th_id">ID</th>
@@ -31,8 +29,8 @@
 				<td><?php echo $row['title'] ?></td>
 				<td><?php echo $row['pic'] ?></td>
 				<td><?php echo $row['time'] ?></td>
-				<td><a href="updatenews.php?id=<?php echo $row['id'] ?>">修改</a>
-				<a href="deletenews.php?id=<?php echo $row['id'] ?>">删除</a>
+				<td><a href="../php/updatenews.php?id=<?php echo $row['id'] ?>">修改</a>
+				<a href="../php/deletenews.php?id=<?php echo $row['id'] ?>">删除</a>
 				</td>
 			</tr>
 		<?php
@@ -40,9 +38,5 @@
 		?>
 	</table>
 </div>
-<!--回到顶部-->
-<div class="gotop-globalview"></div>
-<script type="text/javascript" src="../js/jquery-2.2.3.min.js" ></script>
-<script type="text/javascript" src="../js/index.js" ></script>
 </body>
 </html>

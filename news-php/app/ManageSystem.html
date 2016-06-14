@@ -5,8 +5,8 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>新闻管理系统</title>
-		<link href="./css/bootstrap.min.css" rel="stylesheet">
-		<link href="./css/Systemstyle.css" rel="stylesheet">
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/Systemstyle.css" rel="stylesheet">
 	</head>
 
 	<body>
@@ -14,7 +14,7 @@
 		<header class="navbar navbar-default">
 			<div class="navbar-container">
 				<div class="navbar-header pull-left">
-					<a class="navbar-brand" href="ManageSystem.html">新闻管理</a><a class="navbar-brand" href="index.html">新闻主页</a>
+					<a class="navbar-brand" href="ManageSystem.html">新闻管理</a><a class="navbar-brand" href="../index.html">新闻主页</a>
 				</div>
 			</div>
 		</header>
@@ -39,7 +39,7 @@
 												<h4 class="modal-title" id="myModalLabel">添加新闻</h4>
 											</div>
 											<div class="modal-body">
-												<form action="./php/addnews.php" method="post" class="form-horizontal">
+												<form action="../php/addnews.php" method="post" class="form-horizontal">
 													<div class="form-group">
 														<label for="category" class="col-sm-2 control-label">类别</label>
 														<div class="col-sm-3">
@@ -82,7 +82,6 @@
 										</div>
 									</div>
 								</div>
-								<a href="./php/maintainnews.php" id="deletenews" class="list-group-item list-group-item-warning active" target="_blank">删除/编辑新闻</a>
 							</div>
 						</div>
 					</aside>
@@ -95,29 +94,16 @@
 							新闻列表
 						</div>
 						<div class="table-responsive">
-							<table class="table table-hover table-bordered  table-striped" id="table">
-								<thead>
-									<tr class="danger t-header">
-										<th id="th_id">ID</th>
-										<th id="th_category">类别</th>
-										<th class="th-titile">标题</th>
-										<th class="th-pic">图片地址</th>
-										<th class="th-time">更新时间</th>
-									</tr>
-								</thead>
-								<tbody id="tbody"></tbody>
-							</table>
 						</div>
-						<div id="pagecount"></div>
 					</section>
 				</div>
 			</div>
 		</article>
 		<!--回到顶部-->
 		<div class="gotop-globalview"></div>
-		<script type="text/javascript" src="./js/jquery-2.2.3.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="./js/ManageSystem.js"></script>
+		<script type="text/javascript" src="../js/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../js/ManageSystem.js"></script>
 	</body>
 
 </html>

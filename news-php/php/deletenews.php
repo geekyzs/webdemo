@@ -23,7 +23,7 @@ if ($mark > 0) {
 mysql_close($con);
 ?>
 
-window.location = "maintainnews.php";
+window.location = "../app/ManageSystem.html";
 </script>
 	</body>
 </html>

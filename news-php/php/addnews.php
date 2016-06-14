@@ -11,15 +11,13 @@
 <?php
 mysql_query("SET names UTF8");
 include_once('connect.php');
-mysql_select_db("news", $con);
 //添加数据
-$category =addslashes( $_POST['category']);
-$title = addslashes(HTMLSpecialChars($_POST['title']));
-$pic = addslashes(HTMLSpecialChars($_POST['pic']));
-$time = HTMLSpecialChars($_POST['time']);
+$category =addslashes(htmlspecialchars($_POST['category']));
+$title = addslashes(htmlspecialchars($_POST['title']));
+$pic = addslashes(htmlspecialchars($_POST['pic']));
+$time = htmlspecialchars($_POST['time']);
 mysql_query("set names 'utf8'");
 $sql = "INSERT INTO news (title, pic, time, category) VALUES ('$title', '$pic', '$time', '$category');";
-$url = "../ManageSystem.html";
 if (mysql_query($sql, $con)) {
 	echo  "alert('添加成功')";
 } else {
@@ -28,7 +26,7 @@ if (mysql_query($sql, $con)) {
 mysql_close($con);
 ?>
 
-window.location = "../ManageSystem.html";
+window.location = "../app/ManageSystem.html";
 </script>
 	</body>
 </html>
