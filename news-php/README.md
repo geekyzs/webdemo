@@ -15,16 +15,6 @@ $time = htmlspecialchars($_POST['time']);//时间
 $password = md5(addslashes(htmlspecialchars($_POST['password'])));
 
 4.使用session记录登陆状态
-<?php
-session_start () ;
-if (!isset ($_SESSION['user'])){
-echo "<p align=center>" ;
-echo "<font color=#ff0000 size=5><strong><big>" ;
-echo "你还没有登录,请<a href='../login.html'>登录</a>!" ;
-echo "</big></strong></font></p>" ;
-exit () ; 
- }
-?>
 
 5.使用Token进行CSRF防御
 session_start();
