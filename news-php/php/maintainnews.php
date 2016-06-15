@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<?php
+session_start () ;
+if (!isset ($_SESSION['user'])){
+echo "<p align=center>" ;
+echo "<font color=#ff0000 size=5><strong><big>" ;
+echo "你还没有登录,请<a href='../login.html'>登录</a>!" ;
+echo "</big></strong></font></p>" ;
+exit () ; 
+ }
+?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

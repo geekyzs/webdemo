@@ -8,8 +8,8 @@
 <script type="text/javascript">
 <?php
 include_once('connect.php');
- $username = $_POST['username'];
- $password = md5($_POST['password']);
+ $username = addslashes(htmlspecialchars($_POST['username']));
+ $password = md5(addslashes(htmlspecialchars($_POST['password'])));
  //插入
 $sql = "INSERT INTO user (username, password) VALUES ('$username', '$password');";
 $set = mysql_query($sql,$con);

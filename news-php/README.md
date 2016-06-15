@@ -12,8 +12,19 @@ $time = htmlspecialchars($_POST['time']);//时间
 这样做的作用是防止用户在添加新闻内容或者编辑更新新闻内容时输入预定义的字符如 ‘< 和 >’浏览器将其用作 HTML 元素，对于防止代码运行非常有用（防止xss注入）。
 
 3.在register.php和login.php里使用md5()函数给用户密码加密。
-$password =md5($_POST['password']);
+$password = md5(addslashes(htmlspecialchars($_POST['password'])));
 
+4.使用session记录登陆状态
+<?php
+session_start () ;
+if (!isset ($_SESSION['user'])){
+echo "<p align=center>" ;
+echo "<font color=#ff0000 size=5><strong><big>" ;
+echo "你还没有登录,请<a href='../login.html'>登录</a>!" ;
+echo "</big></strong></font></p>" ;
+exit () ; 
+ }
+?>
 
 
 
