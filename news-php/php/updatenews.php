@@ -1,3 +1,16 @@
+<?php
+error_reporting(E_ERROR);
+session_start();
+$token = md5(uniqid(rand(), TRUE));
+$_SESSION['token'] = $token;
+if (!isset($_SESSION['user'])) {
+	echo "<p align=center>";
+	echo "<font color=#ff0000 size=5><strong><big>";
+	echo "你还没有登录,请<a href='../login.html'>登录</a>!";
+	echo "</big></strong></font></p>";
+	exit();
+}
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -16,6 +29,7 @@ $result = mysql_query($sql,$con);
 if($row = mysql_fetch_array($result)){
 			?>
 			<form action="update.php" method="post" class="form-horizontal">
+				<input type="hidden" name="token" value="<?php echo $token; ?>" class="form-control" >
 				<div class="form-group">
 					<label for="id" class="col-sm-2 control-label">ID</label>
 					<div class="col-sm-1">

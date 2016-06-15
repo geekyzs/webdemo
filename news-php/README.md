@@ -1,21 +1,38 @@
-ï»¿### æ‰‹æœºç™¾åº¦æ–°é—»PHP+MYSQLåå°
-#####æ³¨ï¼šmysqlè„šæœ¬æ–‡ä»¶åœ¨SQLæ–‡ä»¶å¤¹é‡Œï¼Œæ•°æ®åº“åä¸ºï¼šnewsï¼Œï¼ˆuseræ•°æ®è¡¨ä¸ºç”¨æˆ·ç™»å½•ä¿¡æ¯è¡¨ï¼Œnewsæ•°æ®è¡¨ä¸ºæ–°é—»ä¿¡æ¯è¡¨ï¼‰ã€‚
+### ÊÖ»ú°Ù¶ÈĞÂÎÅPHP+MYSQLºóÌ¨
+#####×¢£ºmysql½Å±¾ÎÄ¼şÔÚSQLÎÄ¼ş¼ĞÀï£¬Êı¾İ¿âÃûÎª£ºnews£¬£¨userÊı¾İ±íÎªÓÃ»§µÇÂ¼ĞÅÏ¢±í£¬newsÊı¾İ±íÎªĞÂÎÅĞÅÏ¢±í£©¡£
 
-1.ç»™æ‰€æœ‰HTMLå’ŒPHPè®¾ç½®äº†å­—ç¬¦ç¼–ç (charset=UTF-8)å’Œè®¾ç½®Conent-typeï¼ˆcontent=text/htmlï¼‰ã€‚
-å­—ç¬¦ç¼–ç ï¼šé¿å…å¦‚utf-7 XSSç­‰é—®é¢˜ï¼ŒConent-typeï¼šé¿å…å¦‚Jsonçš„XSSç­‰é—®é¢˜ã€‚
+1.¸øËùÓĞHTMLºÍPHPÉèÖÃÁË×Ö·û±àÂë(charset=UTF-8)ºÍÉèÖÃConent-type£¨content=text/html£©¡£
+×Ö·û±àÂë£º±ÜÃâÈçutf-7 XSSµÈÎÊÌâ£¬Conent-type£º±ÜÃâÈçJsonµÄXSSµÈÎÊÌâ¡£
 
-2.åœ¨addnews.phpå’Œupadte.phpé‡Œç”¨PHP htmlspecialchars() å‡½æ•°æŠŠè¾“å…¥çš„é¢„å®šä¹‰çš„å­—ç¬¦è½¬æ¢ä¸º HTML å®ä½“ã€‚
-$category =addslashes(htmlspecialchars($_POST['category']));//æ–°é—»ç±»åˆ«
-$title = addslashes(htmlspecialchars($_POST['title']));//æ ‡é¢˜
-$pic = addslashes(htmlspecialchars($_POST['pic']));//å›¾ç‰‡åœ°å€
-$time = htmlspecialchars($_POST['time']);//æ—¶é—´
-è¿™æ ·åšçš„ä½œç”¨æ˜¯é˜²æ­¢ç”¨æˆ·åœ¨æ·»åŠ æ–°é—»å†…å®¹æˆ–è€…ç¼–è¾‘æ›´æ–°æ–°é—»å†…å®¹æ—¶è¾“å…¥é¢„å®šä¹‰çš„å­—ç¬¦å¦‚ â€˜< å’Œ >â€™æµè§ˆå™¨å°†å…¶ç”¨ä½œ HTML å…ƒç´ ï¼Œå¯¹äºé˜²æ­¢ä»£ç è¿è¡Œéå¸¸æœ‰ç”¨ï¼ˆé˜²æ­¢xssæ³¨å…¥ï¼‰ã€‚
+2.ÔÚaddnews.phpºÍupadte.phpÀïÓÃPHP htmlspecialchars() º¯Êı°ÑÊäÈëµÄÔ¤¶¨ÒåµÄ×Ö·û×ª»»Îª HTML ÊµÌå¡£
+$category =addslashes(htmlspecialchars($_POST['category']));//ĞÂÎÅÀà±ğ
+$title = addslashes(htmlspecialchars($_POST['title']));//±êÌâ
+$pic = addslashes(htmlspecialchars($_POST['pic']));//Í¼Æ¬µØÖ·
+$time = htmlspecialchars($_POST['time']);//Ê±¼ä
+ÕâÑù×öµÄ×÷ÓÃÊÇ·ÀÖ¹ÓÃ»§ÔÚÌí¼ÓĞÂÎÅÄÚÈİ»òÕß±à¼­¸üĞÂĞÂÎÅÄÚÈİÊ±ÊäÈëÔ¤¶¨ÒåµÄ×Ö·ûÈç ¡®< ºÍ >¡¯ä¯ÀÀÆ÷½«ÆäÓÃ×÷ HTML ÔªËØ£¬¶ÔÓÚ·ÀÖ¹´úÂëÔËĞĞ·Ç³£ÓĞÓÃ£¨·ÀÖ¹xss×¢Èë£©¡£
 
-3.åœ¨register.phpå’Œlogin.phpé‡Œä½¿ç”¨md5()å‡½æ•°ç»™ç”¨æˆ·å¯†ç åŠ å¯†ã€‚
+3.ÔÚregister.phpºÍlogin.phpÀïÊ¹ÓÃmd5()º¯Êı¸øÓÃ»§ÃÜÂë¼ÓÃÜ¡£
 $password = md5(addslashes(htmlspecialchars($_POST['password'])));
 
-4.ä½¿ç”¨sessionè®°å½•ç™»é™†çŠ¶æ€
+4.Ê¹ÓÃsession¼ÇÂ¼µÇÂ½×´Ì¬
+<?php
+session_start () ;
+if (!isset ($_SESSION['user'])){
+echo "<p align=center>" ;
+echo "<font color=#ff0000 size=5><strong><big>" ;
+echo "Äã»¹Ã»ÓĞµÇÂ¼,Çë<a href='../login.html'>µÇÂ¼</a>!" ;
+echo "</big></strong></font></p>" ;
+exit () ; 
+ }
+?>
 
+5.Ê¹ÓÃToken½øĞĞCSRF·ÀÓù
+session_start();
+$token = md5(uniqid(rand(), TRUE));
+$_SESSION['token'] = $token;
 
+<input type="hidden" name="token" value="<?php echo $token; ?>" class="form-control" >
 
-
+if ($_POST['token'] == $_SESSION['token']) {
+//Ìí¼Óµ½Êı¾İ¿â
+}
