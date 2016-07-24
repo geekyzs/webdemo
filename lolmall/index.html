@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" href="./css/index.min.css" />
+		<title>英雄联盟手机商城</title>
+	</head>
+
+	<body>
+		<div class="lol-mobile-page ui-page-theme-b" data-role="page">
+			<!--panel -->
+			<!--个人中心-->
+			<div data-role="panel" id="mypanel">
+				<div data-role="header">
+					<h1>个人中心</h1>
+					<a data-rel="close" class="ui-btn ui-icon-home ui-btn-icon-notext ui-shadow"></a>
+				</div>
+				<div role="main">
+					<div class="userinfo">
+						<div class="userinfo_content">
+							<p class="status"></p>
+							<p class="user_welcome_text">欢迎来到英雄联盟商城</p>
+						</div>
+					</div>
+					<a href="#" class="ui-shadow ui-btn ui-icon-power ui-btn-icon-left ui-corner-all exit">退出登录</a>
+					<div data-role="controlgroup" class="log-reg">
+						<a href="#loginpopup" class="ui-shadow ui-btn ui-corner-all" data-transition="flip">登录</a>
+						<a href="#registerpopup" class="ui-shadow ui-btn ui-corner-all" data-transition="flip">注册</a>
+					</div>
+				</div>
+			</div>
+			<!--头部-->
+			<header class="lol-mobile-header" data-role="header" data-position="fixed">
+				<div class="header-content">
+					<!--用户-->
+					<div class="my-info">
+						<a class="my-info-trigger" href="#mypanel"></a>
+					</div>
+					<!--logo-->
+					<div class="lol-logo">
+						<a class="lol-logo-trigger"></a>
+					</div>
+					<!--购物车-->
+					<div class="my-cart ">
+						<a class="my-cart-trigger" href="#cartpopup" data-transition="slidedown"></a>
+					</div>
+				</div>
+			</header>
+			<!--内容-->
+			<article class="lol-mobile-content ui-content" role="main">
+				<!--横幅广告-->
+				<section class="banner">
+					<ul class="slides">
+						<li>
+							<a href="#"><img class="lol-img1" /></a>
+						</li>
+						<li>
+							<a href="#"><img class="lol-img2" /></a>
+						</li>
+						<li>
+							<a href="#"><img class="lol-img3" /></a>
+						</li>
+						<li>
+							<a href="#"><img class="lol-img4" /></a>
+						</li>
+					</ul>
+					<div class="pagination">
+						<a class="swiper-pagination-switch"></a>
+						<a class="swiper-pagination-switch"></a>
+						<a class="swiper-pagination-switch"></a>
+						<a class="swiper-pagination-switch"></a>
+					</div>
+				</section>
+				<!--导航-->
+				<nav class="lol-nav" data-role="navbar" data-grid="c">
+					<ul>
+						<li>
+							<a class="ui-btn-active">英雄</a>
+						</li>
+						<li>
+							<a>皮肤</a>
+						</li>
+						<li>
+							<a>道具</a>
+						</li>
+						<li>
+							<a>其他</a>
+						</li>
+					</ul>
+				</nav>
+				<!--商品列表-->
+				<section class="lol-list-main">
+					<div data-role="popup" id="cartDialog" data-overlay-theme="b" data-theme="b" class="ui-popup ui-body-b ui-overlay-shadow ui-corner-all">
+						<div data-role="header" data-theme="a" role="banner" class="ui-header ui-bar-a">
+							<h1 class="ui-title">温馨提示</h1>
+						</div>
+						<div role="main" class="ui-content login-in">
+							<h3 class="ui-title">该商品已经成功添加到您的购物车内</h3>
+							<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">继续购物</a>
+							<a href="#cartpopup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" id="in-cart" data-transition="slidedown">进入购物车</a>
+						</div>
+						<div role="main" class="ui-content login-out">
+							<h3 class="ui-title">未登录，请登录！</h3>
+							<a href="#loginpopup" class="ui-shadow ui-btn ui-btn-inline ui-corner-all ui-btn-b" data-transition="flip">立即登录</a>
+						</div>
+					</div>
+					<ul class="lol-list">
+					</ul>
+				</section>
+			</article>
+			<!--footer-->
+			<footer data-role="footer" class="lol-mobile-footer">
+				<p class="copyright">Copyright © 2016<br>
+					<a href="https://github.com/geekyzs/webdemo">GitHub</a>
+				</p>
+			</footer>
+			<!--gotop-->
+			<div class="gotop"></div>
+		</div>
+		<!--登录-->
+		<div data-role="dialog" id="loginpopup" data-url="popup" tabindex="0" class="ui-page ui-page-theme-a ui-dialog">
+			<div data-role="header" data-theme="b">
+				<h1>用户登录</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<form>
+					<label for="un" class="ui-hidden-accessible">Username:</label>
+					<input type="text" name="username" id="l-un" value="" placeholder="用户名" data-theme="a" class="user-input">
+					<label for="pw" class="ui-hidden-accessible">Password:</label>
+					<input type="password" name="password" id="l-pw" value="" placeholder="密码" data-theme="a" class="user-input">
+					<button type="button" class="ui-btn ui-btn-b ui-icon-check ui-btn-icon-left ui-shadow ui-corner-all" id="login">登录</button>
+				</form>
+				<p id="loginmsg"></p>
+				<p>
+					<a href="#registerpopup" data-transition="flip">立即注册>></a>
+				</p>
+			</div>
+			<div data-role="footer" role="contentinfo" class="ui-footer ui-bar-inherit"></div>
+		</div>
+		<!--注册-->
+		<div data-role="dialog" id="registerpopup" data-url="popup" tabindex="0" class="ui-page ui-page-theme-a ui-dialog">
+			<div data-role="header" data-theme="b">
+				<h1>快速注册</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<form>
+					<label for="un" class="ui-hidden-accessible">Username:</label>
+					<input type="text" name="username" id="r-un" value="" placeholder="用户名" data-theme="a" required="required" class="user-input">
+					<label for="pw" class="ui-hidden-accessible">Password:</label>
+					<input type="password" name="password" id="r-pw" value="" placeholder="密码" data-theme="a" required="required" class="user-input">
+					<button type="button" class="ui-btn ui-btn-b ui-icon-check ui-btn-icon-left ui-shadow ui-corner-all" id="register">注册</button>
+				</form>
+				<p id="registermsg"></p>
+				<div class="regsuc">
+					<p>恭喜你，注册成功!</p>
+					<a href="#loginpopup" class="ui-shadow ui-btn ui-btn-inline ui-corner-all ui-btn-b" data-transition="flip">立即登录</a>
+				</div>
+			</div>
+			<div data-role="footer" role="contentinfo" class="ui-footer ui-bar-inherit"></div>
+		</div>
+		<!--结算-->
+		<div data-role="dialog" id="statpopup" data-url="popup" tabindex="0" class="ui-page ui-page-theme-a ui-dialog">
+			<div data-role="header" data-theme="b">
+				<h1>支付订单</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<h3>支付金额：<b class="pay"></b></h3>
+				<p>
+					<a href='#statDialog' data-rel='popup' data-transition='pop' class='ui-shadow ui-btn ui-corner-all buy'>立即购买</a>
+				</p>
+				<div role="main" class="ui-content nobuy">
+					<h3>你还没选购任何商品</h3>
+					<a href="index.html" class="ui-shadow ui-btn ui-btn-inline ui-corner-all go-buy" data-transition="flip">快去选购</a>
+				</div>
+				<div data-role="popup" id="statDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" class="ui-popup ui-body-b ui-overlay-shadow ui-corner-all">
+					<div data-role="header" data-theme="a" role="banner" class="ui-header ui-bar-a">
+						<h1 class="ui-title">温馨提示</h1>
+					</div>
+					<div role="main" class="ui-content">
+						<h3 class="ui-title">恭喜你,物品购买成功!</h3>
+						<a href="index.html" class="ui-shadow ui-btn ui-btn-inline ui-corner-all ui-btn-b go-buy" data-transition="flip">继续购物</a>
+					</div>
+				</div>
+			</div>
+			<div data-role="footer" role="contentinfo" class="ui-footer ui-bar-inherit"></div>
+		</div>
+		<!--购物车-->
+		<div data-role="dialog" id="cartpopup" data-url="popup" tabindex="0" class="ui-page ui-page-theme-a ui-dialog">
+			<div data-role="header" data-theme="b">
+				<h1>购物车</h1>
+			</div>
+			<div role="main" class="ui-content">
+				<h3 id="user"></h3>
+				<ul class="u-cart"></ul>
+			</div>
+			<div data-role="footer" role="contentinfo" class="ui-footer ui-bar-inherit statement-footer">
+				<div class="total-price">
+					总金额<strong id="count">￥0</strong>
+				</div>
+				<a href="#statpopup" class="ui-btn ui-icon-check ui-btn-icon-left ui-shadow ui-corner-all" data-transition='pop' id="statement">结算</a>
+			</div>
+		</div>
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/jquery.mobile-1.4.5.min.js"></script>
+		<script type="text/javascript" src="./js/index.min.js"></script>
+	</body>
+
+</html>

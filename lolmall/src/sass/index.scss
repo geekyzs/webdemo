@@ -1,0 +1,334 @@
+@mixin reset {
+    margin: 0;
+    padding: 0;
+}
+* {
+    @include reset;
+}
+body {
+    padding-top: 1px;
+    font-family: Helvetica,sans-serif;
+}
+ol,
+ul {
+    @include reset;
+    list-style: none;
+}
+.lol-mobile-page {
+    .ui-panel-inner {
+        padding: 0;
+        .userinfo {
+            display: table;
+            width: 100%;
+            height: 92px;
+            text-align: center;
+            background: url("./images/userinfo_bg.jpg") no-repeat;
+            background-size: 100%;
+            .userinfo_content {
+                display: table-cell;
+                vertical-align: middle;
+                .status {
+                    height: 20px;
+                    font-size: 18px;
+                }
+            }
+        }
+        .exit {
+            display: none;
+        }
+        .mallcart {
+            display: none;
+        }
+    }
+    .lol-mobile-header {
+        .header-content {
+            .lol-logo {
+                width: 68%;
+            }
+            .my-info,
+            .my-cart {
+                width: 14%;
+            }
+            .my-info,
+            .lol-logo,
+            .my-cart {
+                display: inline-block;
+                .my-info-trigger {
+                    margin: 0 auto;
+                    display: block;
+                    width: 25px;
+                    height: 38px;
+                    text-indent: -1000em;
+                    background: url("./images/icons.png") no-repeat -37px 7px;
+                    background-size: 282px 31px;
+                }
+                .lol-logo-trigger {
+                    display: block;
+                    margin: 0 auto;
+                    height: 38px;
+                    width: 120px;
+                    background: url("./images/logo.png") no-repeat center;
+                    background-size: 100% 100%;
+                }
+                .my-cart-trigger {
+                    height: 38px;
+                    margin: 0 auto;
+                    display: block;
+                    width: 25px;
+                    background: url("./images/gwc.png") no-repeat center;
+                }
+            }
+        }
+    }
+    .lol-mobile-content {
+        @include reset;
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 160px;
+            .slides {
+                li {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    display: none;
+                    height: 100%;
+                    width: 100%;
+                    &:first-child {
+                        display: block;
+                    }
+                    a {
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            display: block;
+                        }
+                        .lol-img1 {
+                            background: url("./images/pc-1.gif") no-repeat center;
+                            background-size: 100% 100%;
+                        }
+                        .lol-img2 {
+                            background: url("./images/pc-2.gif") no-repeat center;
+                            background-size: 100% 100%;
+                        }
+                        .lol-img3 {
+                            background: url("./images/pc-3.gif") no-repeat center;
+                            background-size: 100% 100%;
+                        }
+                        .lol-img4 {
+                            background: url("./images/pc-4.jpg") no-repeat center;
+                            background-size: 100% 100%;
+                        }
+                    }
+                }
+            }
+            .pagination {
+                position: absolute;
+                left: 0;
+                text-align: center;
+                bottom: 7px;
+                width: 100%;
+                z-index: 800;
+                .swiper-pagination-switch {
+                    display: inline-block;
+                    width: 39px;
+                    height: 7px;
+                    background: url("./images/swiper1.jpg") center center no-repeat;
+                    margin: 0 6px;
+                    cursor: pointer;
+                }
+                .active {
+                    background: url("./images/swiper2.jpg") center center no-repeat;
+                }
+            }
+        }
+        .lol-list-main {
+            .lol-list {
+                li {
+                    padding: 10px;
+                    display: block;
+                    dl {
+                        overflow: hidden;
+                        position: relative;
+                        dt {
+                            width: 120px;
+                            height: 120px;
+                            float: left;
+                            margin-right: 10px;
+                        }
+                        dd {
+                            overflow: hidden;
+                            border-bottom: 1px solid #f1f1f1;
+                            height: 118px;
+                            .tit_area {
+                                position: relative;
+                                top: 10px;
+                                font-size: 14px;
+                                height: 36px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                            .attr {
+                                overflow: hidden;
+                                position: relative;
+                                span {
+                                    display: inline-block;
+                                    color: #e63b53;
+                                    font-size: 22px;
+                                    padding-right: 5px;
+                                    text-overflow: ellipsis;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .lol-mobile-footer {
+        .copyright {
+            font-size: 12px;
+            text-align: center;
+            line-height: 20px;
+            padding: 15px 0 20px;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+    .gotop {
+        width: 40px;
+        height: 45px;
+        position: fixed;
+        right: 15px;
+        bottom: 60px;
+        z-index: 10000;
+        background: url("./images/gotop.png") no-repeat;
+    }
+}
+#registerpopup {
+    .regsuc {
+        display: none;
+    }
+}
+.login-in {
+    display: none;
+}
+#cartpopup {
+    .u-cart {
+        padding: 1px 0 10px;
+        li {
+            position: relative;
+            width: auto;
+            height: 80px;
+            margin: 10px 10px 0;
+            border-bottom: 1px solid #C9C9C9;
+            .u-cart-pic {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 68px;
+                height: 68px;
+                img {
+                    width: 68px;
+                    height: 68px;
+                }
+            }
+            .u-carted-detail {
+                width: 47%;
+                margin-left: 78px;
+                line-height: 18px;
+                .u-name {
+                    color: #000;
+                    width: 100%;
+                    height: 32px;
+                    font-size: 16px;
+                    line-height: 16px;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    white-space: normal;
+                    word-break: break-all;
+                }
+                .u-cate {
+                    width: 100%;
+                    margin-top: 10px;
+                    font-size: 14px;
+                    line-height: 14px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    word-break: keep-all;
+                    text-overflow: ellipsis;
+                }
+            }
+            .u-carted-price {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 26%;
+                text-align: right;
+                .u-price {
+                    width: 100%;
+                    font-size: 18px;
+                    line-height: 18px;
+                    font-weight: 800;
+                    color: #e4007f;
+                }
+            }
+            .u-cart-del {
+                position: absolute;
+                right: 0;
+                bottom: 18px;
+                a {
+                    display: block;
+                    padding: 7px 13px;
+                    font-size: 13px;
+                    color: #e4007f;
+                    border: 1px solid #e4007f;
+                    border-radius: 4px;
+                    text-decoration: none;
+                    background: 0 0;
+                    -webkit-tap-highlight-color: transparent;
+                }
+            }
+        }
+    }
+    .statement-footer {
+        display: none;
+        padding: 0;
+        .total-price {
+            height: 2.28rem;
+            line-height: 2.28rem;
+            text-align: center;
+            color: #222;
+            font-size: 1.18rem;
+            strong {
+                color: #e4007f;
+                font-size: 1.28rem;
+            }
+        }
+        #statement {
+            width: 98%;
+            margin: 0 auto;
+            line-height: 2.88rem;
+            background-color: #de3d96;
+            color: #fff;
+            font-size: 1.18rem;
+            display: block;
+            text-align: center;
+            border: 0 none;
+            outline: 0;
+            padding: 0 0.28rem;
+            border-radius: 2px;
+        }
+    }
+}
+#statpopup {
+    .pay {
+        color: #f63;
+    }
+    .nobuy {
+        display: none;
+    }
+}
