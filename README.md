@@ -1,5 +1,5 @@
 ﻿# My web dmeo :smiley:
-## [geekyzs.cn](http://geekyzs.cn "resume")
+
 
 ####目录:star:
 
